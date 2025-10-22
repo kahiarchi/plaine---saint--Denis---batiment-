@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Acteurs de la Plaine Saint-Denis</title>
+  <script type="module" src="https://unpkg.com/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+</head>
+<body>
+  <h1>Les acteurs du quartier de la Plaine Saint-Denis</h1>
+  <p>Ce diagramme montre les acteurs principaux et leurs relations autour de la transformation urbaine du quartier.</p>
+
+  <div class="mermaid">
+    graph LR
+      Institution["Plaine Commune (institution)"]
+      Promoteur["Plaine Commune Développement (promoteur public)"]
+      Habitant["Habitants et associations locales"]
+      Architecte["Architectes et urbanistes"]
+      Entreprise["Entreprises de construction"]
+
+      Institution -->|Règlementation| Promoteur
+      Promoteur -->|Projets urbains| Architecte
+      Architecte -->|Conception & suivi| Entreprise
+      Entreprise -->|Travaux| Habitant
+      Habitant -->|Participation citoyenne| Institution
+  </div>
+
+  <p><a href="index.html">Retour à la page d'accueil</a></p>
+</body>
+</html>
