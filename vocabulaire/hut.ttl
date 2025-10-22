@@ -1,0 +1,23 @@
+@prefix hut: <http://hut-project.fr/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# Définition d'un bâtiment dans le quartier
+hut:PlaineSaintDenis a hut:Quartier ;
+  hut:contient hut:Batiment1 .
+
+hut:Batiment1 a hut:Batiment ;
+  foaf:name "Immeuble A" .
+
+# Acteurs associés
+hut:Acteur1 a foaf:Person ;
+  foaf:name "Jean Dupont" ;
+  hut:agitDans hut:Batiment1 .
+
+# Source d'information
+hut:Source1 a hut:Source ;
+  foaf:title "Article sur la Plaine Saint Denis" ;
+  foaf:page <https://plaine-commune-developpement.fr/article> .
+
+# Relations entre concepts (exemple)
+hut:Acteur1 hut:utilise hut:Source1 .
