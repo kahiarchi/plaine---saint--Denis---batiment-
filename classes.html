@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diagramme de classes - Quartier Plaine Saint-Denis</title>
+  <script type="module" src="https://unpkg.com/mermaid@10/dist/mermaid.esm.min.mjs"></script>
+</head>
+<body>
+  <h1>Diagramme de classes du projet</h1>
+  <div class="mermaid">
+    classDiagram
+      class Batiment {
+        +adresse
+        +anneeConstruction
+      }
+      class Acteur {
+        +nom
+        +role
+      }
+      class Source {
+        +titre
+        +url
+      }
+      class Donnee {
+        +type
+        +valeur
+      }
+
+      Batiment "1" -- "n" Acteur : concerne
+      Source "1" -- "n" Donnee : fournit
+      Acteur "1" -- "n" Donnee : utilise
+  </div>
+  <p><a href="index.html">Retour à la page d'accueil</a></p>
+</body>
+</html>
