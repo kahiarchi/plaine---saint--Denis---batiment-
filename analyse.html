@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Analyse données CSV</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <h1>Visualisation des données CSV</h1>
+  <div id="chart"></div>
+  <script>
+    d3.csv('chemin/vers/tes-donnees.csv').then(data => {
+      console.log(data);
+      // Traite et affiche les données ici
+    });
+  </script>
+</body>
+</html>
