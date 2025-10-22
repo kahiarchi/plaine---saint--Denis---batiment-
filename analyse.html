@@ -9,10 +9,21 @@
   <h1>Visualisation des données CSV</h1>
   <div id="chart"></div>
   <script>
-    d3.csv('chemin/vers/sources/tableConvert.com_sjup62.csv').then(data => {
-      console.log(data);
-      // Traite et affiche les données ici
-    });
+    d3.csv('sources/tableConvert.com_sjup62.csv').then(data => {
+  const table = d3.select('#chart').append('table');
+  const headers = Object.keys(data[0]);
+
+  const thead = table.append('thead').append('tr');
+  headers.forEach(header => thead.append('th').text(header));
+
+  const tbody = table.append('tbody');
+  data.forEach(row => {
+    const tr = tbody.append('tr');
+    headers.forEach(header => tr.append('td').text(row[header]));
+  });
+}).catch(error => {
+  console.error('Erreur chargement CSV :', error);
+});
   </script>
 </body>
 </html>
