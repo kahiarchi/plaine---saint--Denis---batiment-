@@ -9,16 +9,16 @@ classDiagram
     acteur: +resident ou usager()
 
   class citoyen{
-      +
-     +
+     +implication 
+     +collaboration 
     }
     class institutions publiques{
-      +outils de travail
-     +lieu de travail
+          +fonction
+          +outils de travail
+          +lieu de travail
     }
     class association{
       + statut
      +  role
-  
      }
 ```
