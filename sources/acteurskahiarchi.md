@@ -6,15 +6,14 @@ classDiagram
 
    acteur : date "de naissance"
    acteur : +String gender
-   acteur: +fonction()
+   acteur: +resident ou usager()
   
-
    class citoyen{
      +outils de travail
      +lieu de travail
     
  class association{
      +outils de travail
-     +
+     
      }
 ```
