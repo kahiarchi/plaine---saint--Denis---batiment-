@@ -2,7 +2,8 @@
 classDiagram
     Acteur <|-- Citoyen
     Acteur <|-- Association
-    Acteur <|-- Mairie
+    Acteur <|-- Institution
+    Institution <|-- Mairie
     Acteur : +int age
     Acteur : +String Name
     Acteur : +String gender
@@ -12,6 +13,10 @@ classDiagram
     class Citoyen{
       + participerConsultation()
       + signalerProbleme()
+    }
+class Institution {
+        +String role
+        +regulerProjet()
     }
     class Association{
 
