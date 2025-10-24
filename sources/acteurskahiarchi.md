@@ -17,8 +17,8 @@ classDiagram
      +lieu de travail
     }
     class association{
-      +
-     +
+      + statut
+     +  role
   
      }
 ```
