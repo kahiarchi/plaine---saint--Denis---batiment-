@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
    acteur <|-- citoyen
-   acteurl <|-- institutions publiques 
+   acteur <|-- institutions publiques 
    acteur <|-- association
 
    acteur : date "de naissance"
