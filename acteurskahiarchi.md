@@ -2,7 +2,7 @@
 classDiagram
     acteur <|-- citoyen
     acteur <|-- institutions publiques
-    acteur <|-- association
+    acteur <|-- prive
 
     acteur : +int age
     acteur : +String gender
@@ -18,7 +18,7 @@ classDiagram
           +outils de travail
           +lieu de travail
     }
-    class association{
+    class prive{
       + statut
      +  role
      }
