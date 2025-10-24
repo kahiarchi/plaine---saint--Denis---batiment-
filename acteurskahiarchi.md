@@ -11,12 +11,14 @@ classDiagram
   class citoyen{
      +implication 
      +collaboration
+
      +critique
     }
     class institutions publiques{
-          +fonction
-          +outils de travail
           +lieu de travail
+          +outils de travail
+
+          +fonction
     }
     class prive{
       + statut
