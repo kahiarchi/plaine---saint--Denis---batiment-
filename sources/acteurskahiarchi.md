@@ -12,11 +12,7 @@ classDiagram
    class citoyen{
      +outils de travail
      +lieu de travail
-     }
-    class institution publique{
-     +outils de travail
-     +
-     }
+    
  class association{
      +outils de travail
      +
