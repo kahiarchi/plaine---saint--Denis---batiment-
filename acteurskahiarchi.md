@@ -10,7 +10,8 @@ classDiagram
 
   class citoyen{
      +implication 
-     +collaboration 
+     +collaboration
+     +critique
     }
     class institutions publiques{
           +fonction
