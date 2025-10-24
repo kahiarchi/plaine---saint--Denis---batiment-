@@ -13,10 +13,10 @@ classDiagram
      +collaboration 
     }
     class institutions publiques{
+          +lieu de travail
           +fonction
           +outils de travail
-          +lieu de travail
-    }
+             }
     class prive{
       + statut
      +  role
