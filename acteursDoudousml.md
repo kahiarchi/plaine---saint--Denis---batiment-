@@ -4,23 +4,22 @@ classDiagram
     Acteur <|-- Association
     Acteur <|-- Institution
     Institution <|-- Mairie
-    Acteur : +int age
     Acteur : +String Name
-    Acteur : +String gender
     Acteur : +String adresse
     Acteur: +communiquer()
     Acteur: +collaborer()
     class Citoyen{
+      +int age
       + participerConsultation()
       + signalerProbleme()
     }
 class Institution {
-        +String role
+        +array role
         +regulerProjet()
     }
     class Association{
 
-    +int membres 
+    +array membres 
     + alerterprobleme()
     + organiserActions()
     }
