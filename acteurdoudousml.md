@@ -1,9 +1,4 @@
-```
----
-title:Batimant_actur
----
-
-classDiagram
+```classDiagram
     Animal <|-- Duck
     Animal <|-- Fish
     Animal <|-- Zebra
