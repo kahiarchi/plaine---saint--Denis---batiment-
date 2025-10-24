@@ -1,4 +1,6 @@
-```m classDiagram
+```mermaid
+
+classDiagram
        Acteur <|-- Resident
     Acteur <|-- Promoteur
     Acteur <|-- Institution
@@ -29,7 +31,6 @@
         +regulerProjet()
     }
 
-   
    
 
 ```
