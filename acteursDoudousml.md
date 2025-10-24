@@ -1,4 +1,5 @@
-```classDiagram
+```
+classDiagram
     Acteur <|-- Citoyen
     Acteur <|-- Association
     Acteur <|-- Mairie
