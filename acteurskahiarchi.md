@@ -12,13 +12,13 @@ classDiagram
      +implication 
      +collaboration
 
-     +critique
+     +critique ()
     }
     class institutions publiques{
           +lieu de travail
           +outils de travail
 
-          +fonction
+          +fonction ()
     }
     class prive{
       + statut
