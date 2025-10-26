@@ -1,7 +1,7 @@
 ```mermaid
 
 classDiagram
-      
+       
        class Acteur {
            +String nom
            +int age
@@ -9,33 +9,46 @@ classDiagram
            +participerProjet()
        }
 
-       
+    
        Acteur <|-- Resident
        Acteur <|-- Promoteur
        Acteur <|-- Institution
 
-       
        class Resident {
            +int nombreMembres
            +String logement
            +donnerAvis()
        }
 
-       
+     
        class Promoteur {
            +String entreprise
            +String projet
            +construire()
        }
 
-       
+      
+       Promoteur <|-- GroupeConstruction
+       Promoteur <|-- GroupeImmobilier
+
+       class GroupeConstruction {
+           +nomGroupe
+           +realiserGrandsChantiers()
+       }
+
+       class GroupeImmobilier {
+           +nomGroupe
+           +developperProjetsImmobiliers()
+       }
+
+    
        class Institution {
            +String nomInstitution
            +String role
            +regulerProjet()
        }
 
-       
+      
        Institution <|-- Architecte
        Institution <|-- BureauEtudes
 
@@ -47,5 +60,6 @@ classDiagram
            +analyserProjet()
            +validerConformite()
        }
+
 
 ```
