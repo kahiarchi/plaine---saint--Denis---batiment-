@@ -1,75 +1,51 @@
 ```mermaid
 
 classDiagram
+      
+       class Acteur {
+           +String nom
+           +int age
+           +String type
+           +participerProjet()
+       }
 
-%% --- Classe mère ---
-class Acteur {
-    +participerProjet()
-}
+       
+       Acteur <|-- Resident
+       Acteur <|-- Promoteur
+       Acteur <|-- Institution
 
-%% --- Catégories d'acteurs ---
-Acteur <|-- ActeurInstitutionnel
-Acteur <|-- Resident
-Acteur <|-- ActeurCommunautaire
+       
+       class Resident {
+           +int nombreMembres
+           +String logement
+           +donnerAvis()
+       }
 
-%% --- Acteurs institutionnels ---
-ActeurInstitutionnel <|-- Collectivite
-ActeurInstitutionnel <|-- ServiceUrbanisme
-ActeurInstitutionnel <|-- Architecte
-ActeurInstitutionnel <|-- BureauEtudes
+       
+       class Promoteur {
+           +String entreprise
+           +String projet
+           +construire()
+       }
 
-%% --- Acteurs privés ---
-Acteur <|-- Promoteur
-Acteur <|-- EntrepriseConstruction
+       
+       class Institution {
+           +String nomInstitution
+           +String role
+           +regulerProjet()
+       }
 
-%% --- Acteurs communautaires ---
-ActeurCommunautaire <|-- Association
-ActeurCommunautaire <|-- ComiteRiverains
+       
+       Institution <|-- Architecte
+       Institution <|-- BureauEtudes
 
-%% --- Détails des classes ---
-class Resident {
-    +nombreMembres
-    +typeLogement
-    +donnerAvis()
-}
+       class Architecte {
+           +concevoirBatiment()
+       }
 
-class Promoteur {
-    +entreprise
-    +projet
-    +construire()
-}
-
-class EntrepriseConstruction {
-    +nomEntreprise
-    +realiserTravaux()
-}
-
-class Collectivite {
-    +nomCollectivite
-    +coordonnerProjet()
-}
-
-class ServiceUrbanisme {
-    +gererPermisConstruire()
-    +planifierAmenagement()
-}
-
-class Architecte {
-    +concevoirBatiment()
-}
-
-class BureauEtudes {
-    +analyserProjet()
-    +validerConformite()
-}
-
-class Association {
-    +nomAssociation
-    +organiserReunions()
-}
-
-class ComiteRiverains {
-    +defendreInteretsHabitants()
-}
+       class BureauEtudes {
+           +analyserProjet()
+           +validerConformite()
+       }
 
 ```
