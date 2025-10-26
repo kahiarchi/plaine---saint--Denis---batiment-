@@ -1,21 +1,34 @@
-```mermaid
-
 classDiagram
-       Acteur <|-- Resident
-    Acteur <|-- Promoteur
-    Acteur <|-- Institution
-
+    
     class Acteur {
-        +int age
-        +String nom
         +String type
         +participerProjet()
     }
 
-       class Resident {
-        
+    Acteur <|-- ActeurInstitutionnel
+    Acteur <|-- ActeurPrive
+    Acteur <|-- ActeurCommunautaire
+    Acteur <|-- Resident
+
+    
+    ActeurInstitutionnel <|-- Collectivite
+    ActeurInstitutionnel <|-- ServiceUrbanisme
+    ActeurInstitutionnel <|-- Architecte
+    ActeurInstitutionnel <|-- BureauEtudes
+
+ 
+    ActeurPrive <|-- Promoteur
+    ActeurPrive <|-- EntrepriseConstruction
+
+ 
+    ActeurCommunautaire <|-- Association
+    ActeurCommunautaire <|-- ComiteRiverains
+
+   
+
+    class Resident {
         +int nombreMembres
-        +String logement
+        +String typeLogement
         +donnerAvis()
     }
 
@@ -25,12 +38,31 @@ classDiagram
         +construire()
     }
 
-    class Institution {
-        +String nomInstitution
-        +String role
-        +regulerProjet()
+    class EntrepriseConstruction {
+        +String nomEntreprise
+        +realiserTravaux()
     }
 
-   
+    class Collectivite {
+        +String nomCollectivite
+        +coordonnerProjet()
+    }
 
-```
+    class ServiceUrbanisme {
+        +gererPermisConstruire()
+        +planifierAmenagement()
+    }
+
+    class Architecte {
+        +concevoirBatiment()
+    }
+
+    class BureauEtudes {
+        +analyserProjet()
+        +validerConformite()
+    }
+
+    class Association {
+        +String nomAssociation
+        +organiserReunions()
+    }
