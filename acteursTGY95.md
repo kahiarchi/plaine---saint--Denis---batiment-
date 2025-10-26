@@ -1,4 +1,4 @@
-mermaid
+```mermaid
 
 classDiagram
     
@@ -68,4 +68,4 @@ classDiagram
         +String nomAssociation
         +organiserReunions()
     }
-...
+```
