@@ -1,71 +1,75 @@
 ```mermaid
 
 classDiagram
-    
-    class Acteur {
-        +String type
-        +participerProjet()
-    }
 
-    Acteur <|-- ActeurInstitutionnel
-    Acteur <|-- ActeurPrive
-    Acteur <|-- ActeurCommunautaire
-    Acteur <|-- Resident
+%% --- Classe mère ---
+class Acteur {
+    +participerProjet()
+}
 
-    
-    ActeurInstitutionnel <|-- Collectivite
-    ActeurInstitutionnel <|-- ServiceUrbanisme
-    ActeurInstitutionnel <|-- Architecte
-    ActeurInstitutionnel <|-- BureauEtudes
+%% --- Catégories d'acteurs ---
+Acteur <|-- ActeurInstitutionnel
+Acteur <|-- Resident
+Acteur <|-- ActeurCommunautaire
 
- 
-    ActeurPrive <|-- Promoteur
-    ActeurPrive <|-- EntrepriseConstruction
+%% --- Acteurs institutionnels ---
+ActeurInstitutionnel <|-- Collectivite
+ActeurInstitutionnel <|-- ServiceUrbanisme
+ActeurInstitutionnel <|-- Architecte
+ActeurInstitutionnel <|-- BureauEtudes
 
- 
-    ActeurCommunautaire <|-- Association
-    ActeurCommunautaire <|-- ComiteRiverains
+%% --- Acteurs privés ---
+Acteur <|-- Promoteur
+Acteur <|-- EntrepriseConstruction
 
-   
+%% --- Acteurs communautaires ---
+ActeurCommunautaire <|-- Association
+ActeurCommunautaire <|-- ComiteRiverains
 
-    class Resident {
-        +int nombreMembres
-        +String typeLogement
-        +donnerAvis()
-    }
+%% --- Détails des classes ---
+class Resident {
+    +nombreMembres
+    +typeLogement
+    +donnerAvis()
+}
 
-    class Promoteur {
-        +String entreprise
-        +String projet
-        +construire()
-    }
+class Promoteur {
+    +entreprise
+    +projet
+    +construire()
+}
 
-    class EntrepriseConstruction {
-        +String nomEntreprise
-        +realiserTravaux()
-    }
+class EntrepriseConstruction {
+    +nomEntreprise
+    +realiserTravaux()
+}
 
-    class Collectivite {
-        +String nomCollectivite
-        +coordonnerProjet()
-    }
+class Collectivite {
+    +nomCollectivite
+    +coordonnerProjet()
+}
 
-    class ServiceUrbanisme {
-        +gererPermisConstruire()
-        +planifierAmenagement()
-    }
+class ServiceUrbanisme {
+    +gererPermisConstruire()
+    +planifierAmenagement()
+}
 
-    class Architecte {
-        +concevoirBatiment()
-    }
+class Architecte {
+    +concevoirBatiment()
+}
 
-    class BureauEtudes {
-        +analyserProjet()
-        +validerConformite()
-    }
+class BureauEtudes {
+    +analyserProjet()
+    +validerConformite()
+}
 
-    class Association {
-        +String nomAssociation
-        +organiserReunions()
-    }
+class Association {
+    +nomAssociation
+    +organiserReunions()
+}
+
+class ComiteRiverains {
+    +defendreInteretsHabitants()
+}
+
 ```
