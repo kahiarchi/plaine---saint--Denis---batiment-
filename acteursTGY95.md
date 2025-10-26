@@ -1,3 +1,5 @@
+... mermaid
+
 classDiagram
     
     class Acteur {
@@ -66,3 +68,4 @@ classDiagram
         +String nomAssociation
         +organiserReunions()
     }
+...
