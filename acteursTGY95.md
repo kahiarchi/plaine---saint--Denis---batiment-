@@ -43,7 +43,6 @@ classDiagram
 
     
        class Institution {
-           +String nomInstitution
            +String role
            +regulerProjet()
        }
