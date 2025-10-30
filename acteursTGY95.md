@@ -48,14 +48,11 @@ classDiagram
        }
 
       
-       Institution <|-- Architecte
-       Institution <|-- BureauEtudes
 
-       class Architecte {
-           +concevoirBatiment()
-       }
+       Institution <|-- ServiceUrbanisme
 
-       class BureauEtudes {
+       
+       class ServiceUrbanisme {
            +analyserProjet()
            +validerConformite()
        }
