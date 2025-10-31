@@ -1,27 +1,25 @@
 ...mermaid
-
 erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ ORDER_ITEM : contains
-    PRODUCT ||--o{ ORDER_ITEM : includes
-    CUSTOMER {
+    Personne ||--o{ participatif : places
+    participatif ||--|{ participatifsurterrain : contains
+    impliqué ||--o{ participatifnumérique: includes
+    personne {
         string id
         string name
         string email
     }
-    ORDER {
+    participatif {
         string id
         date orderDate
         string status
     }
-    PRODUCT {
+    impliqué {
         string id
         string name
         float price
     }
-    ORDER_ITEM {
+    participatifsurterrain {
         int quantity
         float price
     }
-
 ...
