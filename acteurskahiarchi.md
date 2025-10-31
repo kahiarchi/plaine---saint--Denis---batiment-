@@ -1,6 +1,6 @@
 ```mermaid
 classDiagram
-    pesonne <|-- association + citoyen
+    pesonne <|-- associationetcitoyen
     pesonne <|-- institutions publiques
     pesonne <|-- prive
 
@@ -8,7 +8,7 @@ classDiagram
     pesonne : +String gender
     pesonne : fonction()
 
-  class association + citoyen {
+  class associationetcitoyen {
      +implication 
      +collaboration
      +critique ()
