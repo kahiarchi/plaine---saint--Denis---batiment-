@@ -1,6 +1,6 @@
 ```mermaid
 classDiagram
-    citoyen <|-- citoyen
+    citoyen <|-- usager
     citoyen <|-- institutions publiques
     citoyen <|-- prive
 
