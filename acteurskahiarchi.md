@@ -2,13 +2,13 @@
 classDiagram
     pesonne <|-- associationetcitoyen
     pesonne <|-- institutions publiques
-    pesonne <|-- prive
+    pesonne <|-- acteur privé 
 
     pesonne : +int age
     pesonne : +String gender
     pesonne : fonction()
 
-  class associationetcitoyen {
+  class association citoyen {
      +implication 
      +collaboration
      +critique ()
@@ -18,7 +18,7 @@ classDiagram
           +outils de travail
           +fonction ()
     }
-    class prive{
+    class acteu pivé{
       + statut
      +  role
      }
