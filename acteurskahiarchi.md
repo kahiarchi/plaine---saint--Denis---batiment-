@@ -15,11 +15,11 @@ classDiagram
     }
     class institutions publiques{
           +lieu de travail
-          +outils de travail
-          +fonction ()
+          +sevice
+          +outils de travail()
     }
     class acteur privé{
-      + statut
+      + activité
      +  role
      }
 ```
