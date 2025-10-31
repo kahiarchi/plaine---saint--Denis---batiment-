@@ -1,4 +1,4 @@
-erDiagram
+
    PERSONNE||--o{ ORDER : places
     PARTICIPATIF ||--|{ ORDER_ITEM : contains
     CRITIQUE ||--o{ ORDER_ITEM : includes
