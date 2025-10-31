@@ -1,25 +1,23 @@
 ...mermaid
 erDiagram
-    Personne ||--o{ participatif : places
-    participatif ||--|{ participatifsurterrain : contains
-    impliqué ||--o{ participatifnumérique: includes
-    personne {
+    citoyen ||--o{ projet : places
+   projet ||--|{ typeprojet : contains
+    batiment ||--o{ typeprojet : includes
+    citoyen {
         string id
         string name
         string email
     }
-    participatif {
+    projet {
         string id
         date orderDate
         string status
     }
-    impliqué {
+    batiment {
         string id
         string name
         float price
     }
-    participatifsurterrain {
+    typeprojet{
         int quantity
-        float price
-    }
 ...
