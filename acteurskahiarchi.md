@@ -1,8 +1,8 @@
 ```mermaid
 classDiagram
-    acteur <|-- citoyen
-    acteur <|-- institutions publiques
-    acteur <|-- prive
+    acteur(citoyen) <|-- citoyen
+    acteur(citoyen) <|-- institutions publiques
+    acteur(citoyen) <|-- prive
 
     acteur : +int age
     acteur : +String gender
