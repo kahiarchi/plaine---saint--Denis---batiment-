@@ -1,3 +1,4 @@
+...mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ ORDER_ITEM : contains
@@ -21,3 +22,4 @@ erDiagram
         int quantity
         float price
     }
+...
