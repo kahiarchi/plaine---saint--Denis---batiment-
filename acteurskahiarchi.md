@@ -1,14 +1,14 @@
 ```mermaid
 classDiagram
-    citoyen <|-- usager
-    citoyen <|-- institutions publiques
-    citoyen <|-- prive
+    pesonne <|-- association + citoyen
+    pesonne <|-- institutions publiques
+    pesonne <|-- prive
 
-    citoyen : +int age
-    citoyen : +String gender
-    citoyen : +resident ou usager()
+    pesonne : +int age
+    pesonne : +String gender
+    pesonne : fonction()
 
-  class usage {
+  class association + citoyen {
      +implication 
      +collaboration
      +critique ()
