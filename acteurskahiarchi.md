@@ -1,6 +1,6 @@
 ```mermaid
 classDiagram
-    pesonne <|-- associationetcitoyen
+    pesonne <|-- association citoyen
     pesonne <|-- institutions publiques
     pesonne <|-- acteur privé 
 
@@ -18,7 +18,7 @@ classDiagram
           +outils de travail
           +fonction ()
     }
-    class acteu pivé{
+    class acteur privé{
       + statut
      +  role
      }
