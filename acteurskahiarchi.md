@@ -8,7 +8,7 @@ classDiagram
     citoyen : +String gender
     citoyen : +resident ou usager()
 
-  class citoyen{
+  class usage {
      +implication 
      +collaboration
      +critique ()
