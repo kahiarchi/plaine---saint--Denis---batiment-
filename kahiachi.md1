@@ -1,0 +1,23 @@
+erDiagram
+   PERSONNE||--o{ ORDER : places
+    PARTICIPATIF ||--|{ ORDER_ITEM : contains
+    CRITIQUE ||--o{ ORDER_ITEM : includes
+    PERSONNE {
+        string id
+        string name
+        string email
+    }
+    PARTICIPATIF {
+        string id
+        date orderDate
+        string status
+    }
+    CRITIQUE {
+        string id
+        string name
+        float price
+    }
+    ORDER_ITEM {
+        int quantity
+        float price
+    }
