@@ -1,27 +1,48 @@
 ```mermaid
 classDiagram
-    personne <|-- AssociationCitoyen
-    personne <|-- InstitutionPublique
-    personne <|-- ActeurPrive
+    Personne <|-- Citoyen
+    Citoyen <|-- CitoyenActif
+    Citoyen <|-- CitoyenProfessionnel
+    CitoyenActif --> ProjetUrbain : Participe à >
+    CitoyenProffessionnel --> InstitutionPublique : Travaille pour >
+    CitoyenProffessionnel --> ActeurPrive : Travaille pour >
+    ProjetUrbain --> InstitutionPublique : est piloté par >
+    ProjetUrbain --> ActeurPrive : est réalisé par >
+    ProjetUrbain --> Citoyen : concerne >
 
-    personne : +int age
-    personne : +String genre
-    personne : fonction()
-
-  class AssociationCitoyen {
-     +String Implication 
-     +String Collaboration
-     +Critique ()
+  class Personne {
+     +int age
+     +String genre
+     +String nom ()
     }
-    class InstitutionPublique{
-          +String lieuDeTravail
-          +String sevice
-          +outilsDeTravail()
-          +gererProjetPublic()
+  class Citoyen {
+     +String statut 
+     +String implication
+     +participerProjet()
     }
-    class ActeurPrive{
-      +String activite
-      +String role
-      +RealiserProjet
+  class CitoyenActif{
+          +String association
+          +exprimerAvis()
+          }
+    class CitoyenProfessionnel{
+      +String fonction
+      +String domaine
+      +AgireEnFonction()
+     }
+   class InstitutionPublique{
+      +String nom
+      +String service
+      +gererProjet()
+     }
+   class ActeurPrive{
+      +String entreprise
+      +String secteur
+      +realiserProjet()
+     }
+  class ProjetUrbain{
+      +String nomProjet
+      +String localisation
+      +String objectif
+      +String etatAvancement()
      }
 ```
