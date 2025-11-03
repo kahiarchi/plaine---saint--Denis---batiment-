@@ -22,5 +22,6 @@ erDiagram
          string id
         string name
         float price
-    }
+        }
+        }
 ...
