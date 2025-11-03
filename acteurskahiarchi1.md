@@ -21,5 +21,4 @@ erDiagram
     typeprojet {
         int quantity
     }
-    }
 ...
