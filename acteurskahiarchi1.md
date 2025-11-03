@@ -1,7 +1,7 @@
 ... mermaid
 erDiagram
     citoyen ||--o{ projet : places
-   projet ||--|{ typeprojet : contains
+    projet ||--|{ typeprojet : contains
     batiment ||--o{ typeprojet : includes
     citoyen {
         string id
@@ -18,6 +18,8 @@ erDiagram
         string name
         float price
     }
-    typeprojet{
+    typeprojet {
         int quantity
+    }
+}
 ...
