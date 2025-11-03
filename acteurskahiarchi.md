@@ -1,25 +1,27 @@
 ```mermaid
 classDiagram
-    pesonne <|-- association citoyen
-    pesonne <|-- institutions publiques
-    pesonne <|-- acteur privé 
+    personne <|-- AssociationCitoyen
+    personne <|-- InstitutionsPubliques
+    personne <|-- ActeurPrive
 
-    pesonne : +int age
-    pesonne : +String gender
-    pesonne : fonction()
+    personne : +int age
+    personne : +String genre
+    personne : fonction()
 
-  class association citoyen {
-     +implication 
-     +collaboration
-     +critique ()
+  class AssociationCitoyen {
+     +String Implication 
+     +String Collaboration
+     +Critique ()
     }
-    class institutions publiques{
-          +lieu de travail
-          +sevice
-          +outils de travail()
+    class InstitutionPublique{
+          +String lieuDeTravail
+          +String sevice
+          +outilsDeTravail()
+          +gererProjetPublic()
     }
-    class acteur privé{
-      + activité
-     +  role
+    class ActeurPrive{
+      +String activite
+      +String role
+      +RealiserProjet
      }
 ```
