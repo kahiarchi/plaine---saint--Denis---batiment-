@@ -1,8 +1,8 @@
 ```mermaid
 erDiagram
     citoyen ||--o{ projet : places
-    projet ||--|{ typeprojet : contains
-    batiment ||--o{ typeprojet : includes
+    projet ||--|{ type-projet : contains
+    batiment ||--o{ type-projet : includes
     citoyen {
         string id
         string name
@@ -18,7 +18,7 @@ erDiagram
         string name
         float price
     }
-    typeprojet {
+    type-projet {
          string id
         string name
         float price
