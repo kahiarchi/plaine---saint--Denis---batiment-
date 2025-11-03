@@ -3,29 +3,31 @@ classDiagram
     Personne <|-- Citoyen
     Citoyen <|-- CitoyenActif
     Citoyen <|-- CitoyenProfessionnel
-    CitoyenActif --> ProjetUrbain : Participe à >
-    CitoyenProffessionnel --> InstitutionPublique : Travaille pour >
-    CitoyenProffessionnel --> ActeurPrive : Travaille pour >
+    CitoyenProffessionnel <|-- InstitutionPublique 
+    CitoyenProffessionnel <|-- ActeurPrive 
    
   class Personne {
      +int age
      +String genre
      +String nom ()
     }
+
   class Citoyen {
      +String statut 
      +String implication
      +participerProjet()
     }
+class CitoyenProfessionnel{
+      +String fonction
+      +String domaine
+      +agirEnFonction()
+      
+     }
   class CitoyenActif{
           +String association
           +exprimerAvis()
           }
-    class CitoyenProfessionnel{
-      +String fonction
-      +String domaine
-      +AgireEnFonction()
-     }
+    
    class InstitutionPublique{
       +String nom
       +String service
