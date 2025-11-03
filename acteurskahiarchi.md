@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
     personne <|-- AssociationCitoyen
-    personne <|-- InstitutionsPubliques
+    personne <|-- InstitutionPubliques
     personne <|-- ActeurPrive
 
     personne : +int age
