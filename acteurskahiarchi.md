@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
-    pesonne <|-- association citoyen
-    pesonne <|-- institutions publiques
+    pesonne <|-- association-citoyen
+    pesonne <|-- institutions-publiques
     pesonne <|-- acteur privé 
 
     pesonne : +int age
@@ -13,12 +13,12 @@ classDiagram
      +collaboration
      +critique ()
     }
-    class institutions publiques{
+    class institutions-publiques{
           +lieu de travail
           +sevice
           +outils de travail()
     }
-    class acteur privé{
+    class acteur-privé{
       + activité
      +  role
      }
