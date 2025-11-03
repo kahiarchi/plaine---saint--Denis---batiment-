@@ -1,4 +1,4 @@
-...mermaid
+... mermaid
 erDiagram
     citoyen ||--o{ projet : places
    projet ||--|{ typeprojet : contains
