@@ -1,61 +1,48 @@
 ```mermaid
-
 classDiagram
        
-       class Acteur {
-           +String nom
-           +int age
-           +String type
-           +participerProjet()
-       }
+    class Acteur {
+        +String nom
+        +int age
+        +String type
+        +participerProjet()
+    }
 
-    
-       Acteur <|-- Resident
-       Acteur <|-- Promoteur
-       Acteur <|-- Institution
+    Acteur <|-- Resident
+    Acteur <|-- Promoteur
+    Acteur <|-- Institution
 
-       class Resident {
-           +int nombreMembres
-           +String logement
-           +donnerAvis()
-       }
+    class Resident {
+        +int nombreMembres
+        +String logement
+        +donnerAvis()
+    }
 
-     
-       class Promoteur {
-           +String entreprise
-           +String projet
-           +construire()
-       }
+    class Promoteur {
+        +String entreprise
+        +String projet
+        +construire()
+    }
 
-      
-       Promoteur <|-- GroupeConstruction
-       Promoteur <|-- GroupeImmobilier
+    Promoteur <|-- GroupeConstruction
+    Promoteur <|-- GroupeImmobilier
 
-       class GroupeConstruction {
-           +nomGroupe
-           +realiserGrandsChantiers()
-       }
+    class GroupeConstruction {
+        +realiserGrandsChantiers()
+    }
 
-       class GroupeImmobilier {
-           +nomGroupe
-           +developperProjetsImmobiliers()
-       }
+    class GroupeImmobilier {
+        +developperProjetsImmobiliers()
+    }
 
-    
-       class Institution {
-           +String role
-           +regulerProjet()
-       }
+    class Institution {
+        +String role
+        +regulerProjet()
+    }
 
-      
+    Institution <|-- ServiceUrbanisme
 
-       Institution <|-- ServiceUrbanisme
-
-       
-       class ServiceUrbanisme {
-           +analyserProjet()
-           +validerConformite()
-       }
-
-
-```
+    class ServiceUrbanisme {
+        +analyserProjet()
+        +validerConformite()
+    }
