@@ -3,12 +3,9 @@ classDiagram
     Personne <|-- Citoyen
     Citoyen <|-- CitoyenActif
     Citoyen <|-- CitoyenProfessionnel
-    CitoyenActif --> ProjetUrbain : Participe à >
-    CitoyenProffessionnel --> InstitutionPublique : Travaille pour >
-    CitoyenProffessionnel --> ActeurPrive : Travaille pour >
-    ProjetUrbain --> InstitutionPublique : est piloté par >
-    ProjetUrbain --> ActeurPrive : est réalisé par >
-    ProjetUrbain --> Citoyen : concerne >
+
+    CitoyenProfessionnel <|-- InstitutionPublique
+    CitoyenProfessionnel <|-- ActeurPrive
 
   class Personne {
      +int age
@@ -39,10 +36,5 @@ classDiagram
       +String secteur
       +realiserProjet()
      }
-  class ProjetUrbain{
-      +String nomProjet
-      +String localisation
-      +String objectif
-      +String etatAvancement()
-     }
+  
 ```
