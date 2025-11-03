@@ -19,6 +19,8 @@ erDiagram
         float price
     }
     typeprojet {
-        int quantity
+         string id
+        string name
+        float price
     }
 ...
