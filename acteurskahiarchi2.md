@@ -1,27 +1,30 @@
-
-CITOYEN ||--o{ PROJET : "participe à"
-    PROJET ||--|{ TYPE_PROJET : "appartient à"
-    TYPE_PROJET ||--o{ TYPE_PROJET : "sous-type de"
-    PROJET ||--o{ BATIMENT : "comprend"
+```mermaid
+erDiagram
+CITOYEN ||--o{ PARTICIPATION : "participe à"
+    PROJET ||--o{ PARTICIPATION : "implique"
+    PARTICIPATION }o--|| PLATEFORME : "se déroule sur"
     CITOYEN ||--o{ COMMENTAIRE : "écrit"
     COMMENTAIRE }o--|| PROJET : "sur"
-    PLATEFORME ||--o{ COMMENTAIRE : "héberge"
-    CITOYEN ||--o{ PLATEFORME : "utilise"
+    PROJET ||--|{ TYPE_PROJET : "est de type"
+    TYPE_PROJET ||--o{ TYPE_PROJET : "sous-type de"
+    PARTICIPATION ||--|| NIVEAU_PARTICIPATION : "relève de"
+
     CITOYEN {
         string id
         string nom
         string email
+        string statut
     }
 
-    PROJET {
+     PROJET {
         string id
         string nom
         string statut
         date dateCreation
         string localisation
+        string description
     }
-
-    TYPE_PROJET {
+     TYPE_PROJET {
         string id
         string nom
         string categorie
@@ -29,14 +32,7 @@ CITOYEN ||--o{ PROJET : "participe à"
         string parentTypeId
     }
 
-    BATIMENT {
-        string id
-        string nom
-        float cout
-        string adresse
-    }
-
-    PLATEFORME {
+     PLATEFORME {
         string id
         string nom
         string url
@@ -47,3 +43,18 @@ CITOYEN ||--o{ PROJET : "participe à"
         string texte
         date datePublication
     }
+
+    PARTICIPATION {
+        string id
+        string typeParticipation
+        date dateDebut
+        date dateFin
+        string resultat
+    }
+ NIVEAU_PARTICIPATION {
+        string id
+        string nom
+        string description
+        int niveau
+    }
+```
