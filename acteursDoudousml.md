@@ -4,7 +4,7 @@ classDiagram
     Acteur <|-- Association
     Acteur <|-- Institution
     Institution <|-- InstitutionPublique
-    Institution <|-- InstitutionPrivé
+    Institution <|-- InstitutionPrivee
     Acteur : +String Name
     Acteur : +String adresse
     Acteur: +communiquer()
