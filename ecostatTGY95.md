@@ -166,11 +166,13 @@ Ce graphique permet de visualiser rapidement quels types d’acteurs sont les pl
 - (<img width="600" height="371" alt="Nombre de projets par statut _ état d&#39;avancement_" src="https://github.com/user-attachments/assets/dfcf1b30-1fb9-4584-8557-df5e6558c1e7" />
 )
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
-- ![Carte projets](projet_localisation.jpg)
+- <img width="590" height="702" alt="localisation projets" src="https://github.com/user-attachments/assets/755efde1-cc9d-4802-8437-a03d84c4d072" />
+
 - **Graphique en barres empilées** montre les collaborations des promoteurs avec les institutions. Les couleurs représentent les différents types de collaboration.
 -<img width="600" height="371" alt="Collaboration Entre Les Acteurs" src="https://github.com/user-attachments/assets/4f073bf8-ea89-4838-88f8-6c43d6ba3d4a" />
 
 ** OBSERVATIONS :**
+
 Les données montrent une répartition équilibrée entre les projets planifiés, en construction et terminés.
 Les collaborations entre promoteurs et institutions mettent en évidence une bonne coordination entre les acteurs techniques et administratifs.
 Les échanges entre résidents et services illustrent une volonté d’intégrer la population au processus de suivi et d’évaluation des projets.
