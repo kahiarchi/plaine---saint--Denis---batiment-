@@ -1,8 +1,6 @@
 ## 1_ LES SOURCES DE DONNEES 
 Données INSEE sur la population et le logement : https://www.insee.fr/fr/statistiques
 - Données sur les équipements urbains : https://data.gouv.fr
-- Observation des projets urbains à Saint-Denis (notes personnelles et photos)
-- Base de données sur les projets participatifs : https://www.diigo.com/user/luckysemiosis?query=%23ACEHN+%23statistiques
 - Territoire-de-projets-urbains : https://plaine-commune-developpement.fr
 - Territoire du quartier de la plaine : https://fr.wikipedia.org/wiki/La_Plaine_Saint-Denis 
 - Renouvellementurbain : https://odyssea-paris.com/renouvellement-urbain-plaine-saint-denis/
