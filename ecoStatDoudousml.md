@@ -118,6 +118,21 @@ class Institution {
     }
 ```
 
+Pour explorer ces données, nous utilisons les bibliothèques Python suivantes :
+
+- **pandas** : pour la manipulation et la structuration des données tabulaires (import, nettoyage, filtrage, jointure, analyse).
+- **matplotlib** : pour la création de visualisations graphiques (diagrammes en fromage, histogrammes, graphiques en barres).
+
+### Diagramme en fromage Répartition des types d'acteurs
 
 <img width="725" height="714" alt="image" src="https://github.com/user-attachments/assets/ca5b4675-8a18-4dba-9ecc-b7fbebf667a5" />
+
+###  Histogramme des âges des citoyens
+
+<img width="745" height="535" alt="image" src="https://github.com/user-attachments/assets/27620298-45cd-49b4-9ba9-ffc70c2000fc" />
+
+### Streamgraph : évolution temporelle des types d'acteurs
+
+<img width="969" height="634" alt="image" src="https://github.com/user-attachments/assets/ee319696-6768-4853-9bc8-f9fb76f6cc72" />
+
 
