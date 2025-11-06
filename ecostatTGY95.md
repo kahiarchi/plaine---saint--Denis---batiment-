@@ -155,13 +155,13 @@ classDiagram
 Cette étude analyse la participation des citoyens, des acteurs publics et privés dans différents projets urbains à La Plaine Saint-Denis. Les visualisations suivantes permettent de comprendre la répartition des acteurs, le type de participation et la localisation des projets.
 
 Afin d'analyser la participation citoyenne dans les projets urbains au quartier de la plaine Saint Denis , nous avons envisagé les représentations suivantes  :
-- **Histogramme** pour comparer le nombre de citoyens selon leur statut ( habitant , professionnel , actif associatif )
-- ![Histogramme citoyens](histogramme_citoyens.png)
-- **Camembert** pour montrer la proportion de chaque acteur ( public , privé et citoyen )
-- ![Camembert acteur](camembert_acteur.png)
+- **Histogramme**  montre le nombre d’interactions entre les résidents et les services. Chaque barre correspond à un résident et indique son niveau de participation.
+- ![Histogramme ](histogramme_citoyens.png)
+- **Camembert** illustre la proportion de projets selon leur statut. Chaque part montre la part de projets « En cours », « Achevés » ou « Planifiés ».
+- ![Camembert ](camembert_acteur.png)
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
 - ![Carte projets](projet_localisation.jpg)
-- **Graphique en barres empilées** pour visualiser la participation selon les types de projets ( culturels , educatifs , sportifs , détentes.....)
+- **Graphique en barres empilées** montre les collaborations des promoteurs avec les institutions. Les couleurs représentent les différents types de collaboration.
 -![Barres empilées](projet_participation.png)
 
 ** OBSERVATIONS :**
