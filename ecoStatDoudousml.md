@@ -20,7 +20,7 @@
 - Participationcitoyenne : https://www.apur.org/fr/population-societe/social-inclusion/solidarites-proximite-resilience-0 
 - Le territoire : https://data.seinesaintdenis.fr/explore/?sort=-title 
 - Association : https://ressources.seinesaintdenis.fr/Appel-a-projets-2024-en-faveur-des-habitants-des-quartiers-prioritaires-de-la
- ## 2_ Data tables 
+ ## 2. Data tables 
 
 Les données brutes issues des sources précédentes ont été synthétisées dans le fichier Excel disponible  [ICI](https://github.com/kahiarchi/Les_acteurs_du_batiment_plaine_Saint_Denis/blob/main/DataTableDoudousml.xlsx)
  
@@ -79,7 +79,7 @@ Les données brutes issues des sources précédentes ont été synthétisées da
 | ------------- | -------------- | ------------------------- |
 | 1             | 3              | Immobilier et aménagement |
 
-## Diagramme de classe de mon projet 
+## 3. Diagramme de classe de mon projet 
 
 ```mermaid
 classDiagram
