@@ -3,7 +3,8 @@ classDiagram
     Acteur <|-- Citoyen
     Acteur <|-- Association
     Acteur <|-- Institution
-    Institution <|-- Mairie
+    Institution <|-- InstitutionPublique
+    Institution <|-- InstitutionPrivé
     Acteur : +String Name
     Acteur : +String adresse
     Acteur: +communiquer()
@@ -16,6 +17,8 @@ classDiagram
 class Institution {
         +array role
         +regulerProjet()
+        +piloterProjet()
+        +delivrerAutorisationUrbanisme()
     }
     class Association{
 
@@ -23,8 +26,11 @@ class Institution {
     + alerterprobleme()
     + organiserActions()
     }
-   class Mairie {
-    + piloterProjetsUrbains()
-    + delivrerAutorisationUrbanisme()
-}
+     class InstitutionPublique {
+      +nomMinistere : String
+    }
+
+    class InstitutionPrivee {
+      +secteurActivite : String
+    }
 ```
