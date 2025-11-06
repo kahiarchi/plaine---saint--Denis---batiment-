@@ -89,62 +89,65 @@ Table ServiceBatiment :
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 4_ STRUCTURE VISUELLE 
-Le diagramme suivant montre les relations entre les différents acteurs du projet .
 
+Le diagramme suivant montre les relations entre les différents acteurs du projet .
 
 ```mermaid
 classDiagram
-    Personne <|-- Citoyen
-    Citoyen <|-- CitoyenActif
-    Citoyen <|-- CitoyenProfessionnel
-
-    CitoyenProfessionnel <|-- InstitutionPublique
-    CitoyenProfessionnel <|-- ActeurPrive
-
-  class Personne {
-     +int age
-     +String genre
-     +String nom ()
+       
+    class Acteur {
+        +String nom
+        +int age
+        +String type
+        +participerProjet()
     }
-  class Citoyen {
-     +String statut 
-     +String implication
-     +participerProjet()
+
+    Acteur <|-- Resident
+    Acteur <|-- Promoteur
+    Acteur <|-- Institution
+
+    class Resident {
+        +int nombreMembres
+        +String logement
+        +donnerAvis()
     }
-  class CitoyenActif{
-          +String association
-          +exprimerAvis()
-          }
-    class CitoyenProfessionnel{
-      +String fonction
-      +String domaine
-      +AgireEnFonction()
-     }
-   class InstitutionPublique{
-      +String nom
-      +String service
-      +gererProjet()
-     }
-   class ActeurPrive{
-      +String entreprise
-      +String secteur
-      +realiserProjet()
-     }
-  
+
+    class Promoteur {
+        +String entreprise
+        +String projet
+        +construire()
+    }
+
+    Promoteur <|-- GroupeConstruction
+    Promoteur <|-- GroupeImmobilier
+
+    class GroupeConstruction {
+        +realiserGrandsChantiers()
+    }
+
+    class GroupeImmobilier {
+        +developperProjetsImmobiliers()
+    }
+
+    class Institution {
+        +String role
+        +regulerProjet()
+    }
+
+    Institution <|-- ServiceUrbanisme
+    Institution <|-- ServiceBâtiment
+
+
+    class ServiceUrbanisme {
+        +analyserProjet()
+        +validerConformite()
+    }
+     class ServiceBâtiment {
+        +suiviControl()
+        +payementConformite()
+    }
+
 ```
 ## 5_ REPRESENTATIONS ET ANALYSE DES DONNEES 
 
