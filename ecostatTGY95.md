@@ -156,7 +156,7 @@ Cette étude analyse la participation des citoyens, des acteurs publics et priv�
 
 Afin d'analyser la participation citoyenne dans les projets urbains au quartier de la plaine Saint Denis , nous avons envisagé les représentations suivantes  :
 - **Histogramme**  montre le nombre d’interactions entre les résidents et les services. Chaque barre correspond à un résident et indique son niveau de participation.
-- ![Histogramme ](NombreActeur_ par_ type.png)
+- NombreActeur_ par_ type.png
 - **Camembert** illustre la proportion de projets selon leur statut. Chaque part montre la part de projets « En cours », « Achevés » ou « Planifiés ».
 - ![Camembert ](camembert_acteur.png)
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
