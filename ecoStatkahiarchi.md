@@ -163,8 +163,7 @@ Afin d'analyser la participation citoyenne dans les projets urbains au quartier 
 - **Camembert** pour montrer la proportion de chaque acteur ( public , privé et citoyen )
 - ![Camembert acteur](camembert_acteur.png)
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
-- ![projet_localisation](https://github.com/user-attachments/assets/40fcdab6-17f2-46ba-9797-b2eb6e5f7ee3)
-
+- <img width="590" height="702" alt="projet_localisation" src="https://github.com/user-attachments/assets/61bfda40-468c-41e4-a6d6-72577e7879e7" />
 - **Graphique en barres empilées** pour visualiser la participation selon les types de projets ( culturels , educatifs , sportifs , détentes.....)
 -![Barres empilées](projet_participation.png)
 
