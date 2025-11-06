@@ -41,8 +41,14 @@ classDiagram
     }
 
     Institution <|-- ServiceUrbanisme
+    Institution <|-- ServiceBâtiment
+
 
     class ServiceUrbanisme {
         +analyserProjet()
         +validerConformite()
+    }
+     class ServiceBâtiment {
+        +suiviControl()
+        +payementConformite()
     }
