@@ -162,7 +162,7 @@ Afin d'analyser la participation citoyenne dans les projets urbains au quartier 
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
 - ![Carte projets](projet_localisation.jpg)
 - **Graphique en barres empilées** montre les collaborations des promoteurs avec les institutions. Les couleurs représentent les différents types de collaboration.
--![Barres empilées](projet_participation.png)
+-![Barres empilées](Collaboration Entre Les Acteurs.png)
 
 ** OBSERVATIONS :**
 
