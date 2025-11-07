@@ -10,7 +10,7 @@ classDiagram
   class Personne {
      +int age
      +String genre
-     +String nom ()
+     +String nom
     }
   class Citoyen {
      +String statut 
@@ -24,6 +24,8 @@ classDiagram
     class CitoyenProfessionnel{
       +String fonction
       +String domaine
+      + InstitutionPublique
+      + ActeurPrive
       +AgireEnFonction()
      }
    class InstitutionPublique{
