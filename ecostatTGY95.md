@@ -23,7 +23,7 @@ Données INSEE sur la population et le logement : https://www.insee.fr/fr/statis
   
  ## 2_ LE LIEN DATA TABLES ( csv)
 
-https://github.com/kahiarchi/LeBatiment_PlaineSaintDenis/blob/7c9bcaf99d1d1c83ac8cdee375ffc0ef36507538/mes_tables.csv
+mes_tables.xlsx
 
 
 ## 3_ DATA TABLES
