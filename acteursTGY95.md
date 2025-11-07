@@ -7,10 +7,6 @@ classDiagram
         +participerProjet()
     }
 
-    Acteur <|-- Resident
-    Acteur <|-- Promoteur
-    Acteur <|-- Institution
-
     class Resident {
         +String compositionFoyer
         +String logement
@@ -22,9 +18,6 @@ classDiagram
         +List~Projet~ projets
         +construire()
     }
-
-    Promoteur <|-- GroupeConstruction
-    Promoteur <|-- GroupeImmobilier
 
     class GroupeConstruction {
         +realiserGrandsChantiers()
@@ -38,9 +31,6 @@ classDiagram
         +String role
         +regulerProjet()
     }
-
-    Institution <|-- ServiceUrbanisme
-    Institution <|-- ServiceBatiment
 
     class ServiceUrbanisme {
         +analyserProjet()
@@ -58,5 +48,13 @@ classDiagram
         +String localisation
     }
 
-   
+  
+    Acteur <|-- Resident
+    Acteur <|-- Promoteur
+    Acteur <|-- Institution
+    Promoteur <|-- GroupeConstruction
+    Promoteur <|-- GroupeImmobilier
+    Institution <|-- ServiceUrbanisme
+    Institution <|-- ServiceBatiment
+
 ```
