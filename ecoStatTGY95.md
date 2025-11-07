@@ -96,32 +96,23 @@ Le diagramme suivant montre les relations entre les différents acteurs du proje
 
 ```mermaid
 classDiagram
-       
     class Acteur {
         +String nom
-        +int age
-        +String type
+        +Date dateNaissance
         +participerProjet()
     }
 
-    Acteur <|-- Resident
-    Acteur <|-- Promoteur
-    Acteur <|-- Institution
-
     class Resident {
-        +int nombreMembres
+        +String compositionFoyer
         +String logement
         +donnerAvis()
     }
 
     class Promoteur {
         +String entreprise
-        +String projet
+        +List~Projet~ projets
         +construire()
     }
-
-    Promoteur <|-- GroupeConstruction
-    Promoteur <|-- GroupeImmobilier
 
     class GroupeConstruction {
         +realiserGrandsChantiers()
@@ -136,18 +127,32 @@ classDiagram
         +regulerProjet()
     }
 
-    Institution <|-- ServiceUrbanisme
-    Institution <|-- ServiceBâtiment
-
-
     class ServiceUrbanisme {
         +analyserProjet()
         +validerConformite()
     }
-     class ServiceBâtiment {
+
+    class ServiceBatiment {
         +suiviControl()
         +payementConformite()
     }
+
+    class Projet {
+        +String nom
+        +String statut
+        +String localisation
+    }
+
+  
+    Acteur <|-- Resident
+    Acteur <|-- Promoteur
+    Acteur <|-- Institution
+    Promoteur <|-- GroupeConstruction
+    Promoteur <|-- GroupeImmobilier
+    Institution <|-- ServiceUrbanisme
+    Institution <|-- ServiceBatiment
+
+```
 
 ```
 ## 5_ REPRESENTATIONS ET ANALYSE DES DONNEES 
