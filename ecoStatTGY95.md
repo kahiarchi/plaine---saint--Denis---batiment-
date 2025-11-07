@@ -141,6 +141,7 @@ classDiagram
         +String nom
         +String statut
         +String localisation
+        +afficherDetails()
     }
 
   
