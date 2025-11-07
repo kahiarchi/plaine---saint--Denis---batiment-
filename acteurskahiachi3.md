@@ -1,6 +1,6 @@
 ```mermaid
 classDiagram
-     Acteur <|-- Personne
+     
    Acteur <|-- Association
     Acteur <|-- Citoyen
      Association <|-- CitoyenActif
