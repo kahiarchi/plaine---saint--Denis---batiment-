@@ -5,7 +5,7 @@ classDiagram
     Acteur <|-- Citoyen
      Association <|-- CitoyenActif
     Citoyen <|-- CitoyenActif
-    Acteur <|-- CitoyenProfessionnel
+    Citoyen <|-- CitoyenProfessionnel
     CitoyenProfessionnel <|-- CitoyenPublic
     CitoyenProfessionnel <|-- CitoyenPrive
 
