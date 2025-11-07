@@ -2,10 +2,10 @@
 classDiagram
      Acteur <|-- Personne
    Acteur <|-- Association
-    Personne <|-- Citoyen
+    Acteur <|-- Citoyen
      Association <|-- CitoyenActif
     Citoyen <|-- CitoyenActif
-    Personne <|-- CitoyenProfessionnel
+    Acteur <|-- CitoyenProfessionnel
     CitoyenProfessionnel <|-- CitoyenPublic
     CitoyenProfessionnel <|-- CitoyenPrive
 
@@ -14,13 +14,10 @@ classDiagram
     Acteur : +String adresse
     Acteur: +communiquer()
     Acteur: +collaborer()
-  class Personne {
-     +Date   dateDeNaissance
-     +String genre
-     +String nom
-  }
+
 
   class Citoyen {
+     +Date   dateDeNaissance
      +String statut 
      +String implication
      +participerProjet()
@@ -33,7 +30,7 @@ classDiagram
     + organiserActions()
     }
   class CitoyenActif {
-     +String association
+     +array association
      +exprimerAvis()
   }
 
