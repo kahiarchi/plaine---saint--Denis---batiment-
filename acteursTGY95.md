@@ -1,6 +1,5 @@
 ```mermaid
 classDiagram
-   
     class Acteur {
         +String nom
         +Date dateNaissance
@@ -8,11 +7,9 @@ classDiagram
         +participerProjet()
     }
 
-    
     Acteur <|-- Resident
     Acteur <|-- Promoteur
     Acteur <|-- Institution
-
 
     class Resident {
         +String compositionFoyer
@@ -37,7 +34,6 @@ classDiagram
         +developperProjetsImmobiliers()
     }
 
-   
     class Institution {
         +String role
         +regulerProjet()
@@ -56,7 +52,6 @@ classDiagram
         +payementConformite()
     }
 
- 
     class Projet {
         +String nom
         +String statut
