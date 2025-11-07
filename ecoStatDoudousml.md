@@ -110,11 +110,11 @@ class Institution {
     + organiserActions()
     }
      class InstitutionPublique {
-      +nomMinistere : String
+      +String nomMinistere
     }
 
     class InstitutionPrivee {
-      +secteurActivite : String
+      +String secteurActivite 
     }
 ```
 
