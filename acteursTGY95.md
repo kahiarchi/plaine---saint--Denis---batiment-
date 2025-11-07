@@ -1,4 +1,4 @@
-classDiagram
+mermaid
 
     class Acteur {
         +String nom
@@ -60,3 +60,5 @@ classDiagram
 
     Promoteur "1" --> "n" Projet : réalise
     Institution "1" --> "n" Projet : supervise
+
+...
