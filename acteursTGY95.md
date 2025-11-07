@@ -1,5 +1,4 @@
-mermaid
-
+classDiagram
     class Acteur {
         +String nom
         +Date dateNaissance
@@ -19,7 +18,7 @@ mermaid
 
     class Promoteur {
         +String entreprise
-        +List<Projet> projets
+        +List of Projet projets
         +construire()
     }
 
@@ -40,14 +39,14 @@ mermaid
     }
 
     Institution <|-- ServiceUrbanisme
-    Institution <|-- ServiceBâtiment
+    Institution <|-- ServiceBatiment
 
     class ServiceUrbanisme {
         +analyserProjet()
         +validerConformite()
     }
 
-    class ServiceBâtiment {
+    class ServiceBatiment {
         +suiviControl()
         +payementConformite()
     }
@@ -60,5 +59,3 @@ mermaid
 
     Promoteur "1" --> "n" Projet : réalise
     Institution "1" --> "n" Projet : supervise
-
-...
