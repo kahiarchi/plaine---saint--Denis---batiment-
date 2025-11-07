@@ -135,4 +135,60 @@ Pour explorer ces données, nous utilisons les bibliothèques Python suivantes :
 
 <img width="969" height="634" alt="image" src="https://github.com/user-attachments/assets/ee319696-6768-4853-9bc8-f9fb76f6cc72" />
 
+## 4.INTERACTIONS AVEC L’ENVIRONNEMENT
 
+### Citoyens
+
+- Participent aux consultations publiques sur les projets urbains.
+
+- Signalent les problèmes rencontrés dans leur quartier (propreté, sécurité, voirie…).
+
+- Adhèrent à des associations locales pour défendre leurs intérêts.
+
+- Contribuent à la vie du territoire par leurs retours et leur engagement.
+
+### Associations
+
+- Représentent les habitants et servent de relais entre citoyens et institutions.
+
+- Organisent des actions collectives (réunions, nettoyages, événements).
+
+- Alerte les autorités sur des problèmes urbains.
+
+- Collaborent avec les institutions dans des projets d’aménagement.
+
+- Favorisent la participation citoyenne et la cohésion sociale.
+
+### Institutions publiques
+
+- Régulent et planifient les projets urbains (ex. : Mairie de Saint-Denis, Plaine Commune).
+
+- Délivrent les autorisations d’urbanisme.
+
+- Supervisent les travaux et garantissent le respect du cadre réglementaire.
+
+- Consultent citoyens et associations dans le cadre de la concertation.
+
+- Assurent un équilibre entre intérêt public et développement économique.
+
+### Institutions privées
+
+- Participent à la mise en œuvre concrète des projets d’aménagement.
+
+- Coopèrent avec les institutions publiques sur les chantiers.
+
+- Contribuent à la rénovation, la construction et la dynamisation du territoire.
+
+- Agissent comme opérateurs économiques et techniques.
+
+ ### Environnement général
+
+- Ensemble d’interactions entre acteurs et territoire.
+
+- Échanges d’informations, de décisions et de ressources.
+
+- Participation à la transformation urbaine de La Plaine Saint-Denis.
+
+- Utilisation de données externes (INSEE, data.gouv.fr, APUR, Plaine Commune).
+
+Objectif : améliorer la gouvernance urbaine et la collaboration entre acteurs.
