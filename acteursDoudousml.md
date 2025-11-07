@@ -10,7 +10,7 @@ classDiagram
     Acteur: +communiquer()
     Acteur: +collaborer()
     class Citoyen{
-      +int age
+      +date date_de_naissance 
       + participerConsultation()
       + signalerProbleme()
     }
