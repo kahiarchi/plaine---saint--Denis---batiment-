@@ -3,7 +3,7 @@ classDiagram
        
     class Acteur {
         +String nom
-        +int age
+        +date naissance
         +String type
         +participerProjet()
     }
@@ -20,7 +20,7 @@ classDiagram
 
     class Promoteur {
         +String entreprise
-        +String projet
+        +array projet
         +construire()
     }
 
