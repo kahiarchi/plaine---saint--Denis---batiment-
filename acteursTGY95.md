@@ -1,9 +1,8 @@
-```mermaid
 classDiagram
-       
+
     class Acteur {
         +String nom
-        +date naissance
+        +Date dateNaissance
         +String type
         +participerProjet()
     }
@@ -13,14 +12,14 @@ classDiagram
     Acteur <|-- Institution
 
     class Resident {
-        +int nombreMembres
+        +String compositionFoyer
         +String logement
         +donnerAvis()
     }
 
     class Promoteur {
         +String entreprise
-        +array projet
+        +List<Projet> projets
         +construire()
     }
 
@@ -43,12 +42,21 @@ classDiagram
     Institution <|-- ServiceUrbanisme
     Institution <|-- ServiceBâtiment
 
-
     class ServiceUrbanisme {
         +analyserProjet()
         +validerConformite()
     }
-     class ServiceBâtiment {
+
+    class ServiceBâtiment {
         +suiviControl()
         +payementConformite()
     }
+
+    class Projet {
+        +String nom
+        +String statut
+        +String localisation
+    }
+
+    Promoteur "1" --> "n" Projet : réalise
+    Institution "1" --> "n" Projet : supervise
