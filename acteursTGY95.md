@@ -18,7 +18,7 @@ classDiagram
 
     class Promoteur {
         +String entreprise
-        +List of Projet projets
+        +List~Projet~ projets
         +construire()
     }
 
