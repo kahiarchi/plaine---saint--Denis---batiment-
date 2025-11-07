@@ -3,7 +3,6 @@ classDiagram
     class Acteur {
         +String nom
         +Date dateNaissance
-        +String type
         +participerProjet()
     }
 
