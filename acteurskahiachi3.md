@@ -1,42 +1,47 @@
 ```mermaid
 classDiagram
+    %% Hiérarchie des individus
     Personne <|-- Citoyen
+    Personne <|-- CitoyenProfessionnel
     Citoyen <|-- CitoyenActif
-    Citoyen <|-- CitoyenProfessionnel
-    CitoyenProffessionnel <|-- InstitutionPublique 
-    CitoyenProffessionnel <|-- ActeurPrive 
-   
+
+    %% Associations du citoyen professionnel avec les structures
+    CitoyenProfessionnel --> InstitutionPublique : travailleDans >
+    CitoyenProfessionnel --> ActeurPrive : collaboreAvec >
+
   class Personne {
      +int age
      +String genre
-     +String nom ()
-    }
+     +String nom
+  }
 
   class Citoyen {
      +String statut 
      +String implication
      +participerProjet()
-    }
-class CitoyenProfessionnel{
-      +String fonction
-      +String domaine
-      +agirEnFonction()
-      
-     }
-  class CitoyenActif{
-          +String association
-          +exprimerAvis()
-          }
-    
-   class InstitutionPublique{
-      +String nom
-      +String service
-      +gererProjet()
-     }
-   class ActeurPrive{
-      +String entreprise
-      +String secteur
-      +realiserProjet()
-     }
+  }
+
+  class CitoyenActif {
+     +String association
+     +exprimerAvis()
+  }
+
+  class CitoyenProfessionnel {
+     +String fonction
+     +String domaine
+     +agirEnFonction()
+  }
+
+  class InstitutionPublique {
+     +String nom
+     +String service
+     +gererProjet()
+  }
+
+  class ActeurPrive {
+     +String entreprise
+     +String secteur
+     +realiserProjet()
+  }
   
 ```
