@@ -104,5 +104,11 @@ classDiagram
     ActeurSocial <|-- Habitant
     ActeurSocial <|-- Usager
 
+ Promoteur --> Projet 
+    ServiceUrbanisme --> Projet 
+    Mairie --> Projet 
+    CollectiviteTerritoriale --> Projet 
+    AssociationRiverains --> Projet 
+    Habitant --> Projet
    
 ```
