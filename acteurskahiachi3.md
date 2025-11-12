@@ -1,54 +1,60 @@
 ```mermaid
 classDiagram
-     
-   Acteur <|-- Association
-    Acteur <|-- Citoyen
-     Association <|-- CitoyenActif
-    Citoyen <|-- CitoyenActif
-    Citoyen <|-- CitoyenProfessionnel
-    CitoyenProfessionnel <|-- CitoyenPublic
-    CitoyenProfessionnel <|-- CitoyenPrive
-
-
-    Acteur : +String Name
-    Acteur : +String adresse
-    Acteur: +communiquer()
-    Acteur: +collaborer()
-
-
-  class Citoyen {
-     +Date   dateDeNaissance
-     +String statut 
-     +String implication
-     +participerProjet()
-  }
-
-   class Association{
-
-    +array membres 
-    + alerterprobleme()
-    + organiserActions()
+    class Acteur {
+        +String nom
+        +Date dateNaissance
+        +participerProjet()
     }
-  class CitoyenActif {
-     +array association
-     +exprimerAvis()
-  }
 
-  class CitoyenProfessionnel {
-     +String fonction
-     +String domaine
-     +agirEnFonction()
-  }
+    class Resident {
+        +String compositionFoyer
+        +String logement
+        +donnerAvis()
+    }
 
-  class CitoyenPublic {
-     +String service
-     +String nomInstitution
-     +gererProjet()
-  }
+    class Promoteur {
+        +String entreprise
+        +List~Projet~ projets
+        +construire()
+    }
 
-  class CitoyenPrive {
-     +String entreprise
-     +String secteur
-     +realiserProjet()
-  }
+    class GroupeConstruction {
+        +realiserGrandsChantiers()
+    }
+
+    class GroupeImmobilier {
+        +developperProjetsImmobiliers()
+    }
+
+    class Institution {
+        +String role
+        +regulerProjet()
+    }
+
+    class ServiceUrbanisme {
+        +analyserProjet()
+        +validerConformite()
+    }
+
+    class ServiceBatiment {
+        +suiviControl()
+        +payementConformite()
+    }
+
+    class Projet {
+        +String nom
+        +String statut
+        +String localisation
+        +afficherDetails()
+    }
+
+  
+    Acteur <|-- Resident
+    Acteur <|-- Promoteur
+    Acteur <|-- Institution
+    Promoteur <|-- GroupeConstruction
+    Promoteur <|-- GroupeImmobilier
+    Institution <|-- ServiceUrbanisme
+    Institution <|-- ServiceBatiment
+
 ```
