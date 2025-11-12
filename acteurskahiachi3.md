@@ -53,14 +53,14 @@ classDiagram
     }
 
     class EntrepriseConstruction {
-        +List <employeurs>
+        +List employeurs
         +realiserGrandsChantiers()
         +gererSousTraitants()
         +controlerQualite()
     }
 
     class Architecte {
-        +Liste <numéroOrdre>
+        +List numéroOrdre
         +concevoirPlans()
         +superviserExecution()
         +coordonnerEquipes()
