@@ -58,6 +58,7 @@ classDiagram
     Institution <|-- ServiceBatiment
 
 ```
+```mermaid
 classDiagram
     %% Classe de base
     class Acteur {
@@ -169,3 +170,4 @@ classDiagram
     CollectiviteTerritoriale --> Projet : "planifie"
     AssociationRiverains --> Projet : "donne avis"
     Habitant --> Projet : "impacté par"
+```
