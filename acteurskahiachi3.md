@@ -26,10 +26,12 @@ classDiagram
 
     %% Institutions publiques
     class Mairie {
+        +int CodePostal
         +gererUrbanismeLocal()
     }
 
     class CollectiviteTerritoriale {
+        +String region
         +planifierDeveloppement()
     }
 
