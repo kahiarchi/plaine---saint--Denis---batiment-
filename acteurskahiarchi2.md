@@ -1,60 +1,139 @@
 ```mermaid
-erDiagram
-CITOYEN ||--o{ PARTICIPATION : "participe à"
-    PROJET ||--o{ PARTICIPATION : "implique"
-    PARTICIPATION }o--|| PLATEFORME : "se déroule sur"
-    CITOYEN ||--o{ COMMENTAIRE : "écrit"
-    COMMENTAIRE }o--|| PROJET : "sur"
-    PROJET ||--|{ TYPE_PROJET : "est de type"
-    TYPE_PROJET ||--o{ TYPE_PROJET : "sous-type de"
-    PARTICIPATION ||--|| NIVEAU_PARTICIPATION : "relève de"
-
-    CITOYEN {
-        string id
-        string nom
-        string email
-        string statut
+classDiagram
+    %% Classe de base
+    class Acteur {
+        +String nom
+        +Date dateNaissance
+        +String fonction
+        +String contact
+        +participerProjet(Projet projet)
+        +consulterInformation(Projet projet)
     }
 
-     PROJET {
-        string id
-        string nom
-        string statut
-        date dateCreation
-        string localisation
-        string description
-    }
-     TYPE_PROJET {
-        string id
-        string nom
-        string categorie
-        string description
-        string parentTypeId
+    %% Sous-classes principales
+    class InstitutionPublique {
+        +String typeInstitution
+        +String niveauAdministratif
+        +coordonnerProjets()
+        +attribuerAutorisation(Projet projet)
     }
 
-     PLATEFORME {
-        string id
-        string nom
-        string url
+    class ActeurPrive {
+        +String domaine
+        +String entreprise
+        +collaborerAvecInstitution(InstitutionPublique institution)
+        +soumettreProposition(Projet projet)
     }
 
-    COMMENTAIRE {
-        string id
-        string texte
-        date datePublication
+    class ActeurSocial {
+        +String representant
+        +String zoneIntervention
+        +organiserReunions()
+        +exprimerRevandication()
     }
 
-    PARTICIPATION {
-        string id
-        string typeParticipation
-        date dateDebut
-        date dateFin
-        string resultat
+    %% Institutions publiques
+    class Mairie {
+        +String arrondissement
+        +gererUrbanismeLocal()
+        +delivrerPermisConstruire()
     }
- NIVEAU_PARTICIPATION {
-        string id
-        string nom
-        string description
-        int niveau
+
+    class CollectiviteTerritoriale {
+        +String region
+        +planifierDeveloppement()
+        +financerProjet(Projet projet)
     }
+
+    class ServiceUrbanisme {
+        +analyserProjet(Projet projet)
+        +validerConformite(Projet projet)
+        +emettreAvisTechnique()
+    }
+
+    %% Acteurs privés
+    class Promoteur {
+        +List~Projet~ projets
+        +estimerCoutGlobal()
+        +planifierChantier()
+        +construire()
+    }
+
+    class EntrepriseConstruction {
+        +int effectif
+        +realiserGrandsChantiers()
+        +gererSousTraitants()
+        +controlerQualite()
+    }
+
+    class Architecte {
+        +String numeroOrdre
+        +concevoirPlans(Projet projet)
+        +superviserExecution()
+        +coordonnerEquipes()
+    }
+
+    class SpecialisteBatiment {
+        +String specialite
+        +verifierNormes(Projet projet)
+        +proposerSolutionsTechniques()
+    }
+
+    %% Acteurs sociaux
+    class AssociationRiverains {
+        +String nomAssociation
+        +defendreInteretsLocaux()
+        +organiserReunionsPubliques()
+    }
+
+    class ComiteQuartier {
+        +String quartier
+        +organiserEvenements()
+        +relayerInformation()
+    }
+
+    class Habitant {
+        +String compositionFoyer
+        +String logement
+        +donnerAvis(Projet projet)
+        +participerConsultation()
+    }
+
+    class Usager {
+        +String usagePrincipal
+        +utiliserEquipements()
+        +exprimerBesoins()
+    }
+
+    %% Autres classes
+    class Projet {
+        +String nom
+        +String statut
+        +String localisation
+        +float budget
+        +Date dateDebut
+        +Date dateFin
+        +afficherDetails()
+        +evaluerImpactSocial()
+        +evaluerImpactEnvironnemental()
+    }
+
+    %% Relations hiérarchiques (seulement)
+    Acteur <|-- InstitutionPublique
+    Acteur <|-- ActeurPrive
+    Acteur <|-- ActeurSocial
+
+    InstitutionPublique <|-- Mairie
+    InstitutionPublique <|-- CollectiviteTerritoriale
+    InstitutionPublique <|-- ServiceUrbanisme
+
+    ActeurPrive <|-- Promoteur
+    ActeurPrive <|-- EntrepriseConstruction
+    ActeurPrive <|-- Architecte
+    ActeurPrive <|-- SpecialisteBatiment
+
+    ActeurSocial <|-- AssociationRiverains
+    ActeurSocial <|-- ComiteQuartier
+    ActeurSocial <|-- Habitant
+    ActeurSocial <|-- Usager
 ```
