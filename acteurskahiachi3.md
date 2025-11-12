@@ -28,53 +28,71 @@ classDiagram
     class Mairie {
         +int CodePostal
         +gererUrbanismeLocal()
+        +delivrerPermisConstruire()
     }
 
     class CollectiviteTerritoriale {
         +String region
         +planifierDeveloppement()
+        +financerProjet(Projet projet)
     }
 
     class ServiceUrbanisme {
         +analyserProjet()
         +validerConformite()
+        +emettreAvisTechnique()
     }
 
     %% Acteurs privés
     class Promoteur {
-        +String entreprise
+        
         +List~Projet~ projets
+        +estimerCoutGlobal()
+        +planifierChantier()
         +construire()
     }
 
     class EntrepriseConstruction {
+        +List <employeurs>
         +realiserGrandsChantiers()
+        +gererSousTraitants()
+        +controlerQualite()
     }
 
     class Architecte {
+        +Liste <numéroOrdre>
         +concevoirPlans()
+        +superviserExecution()
+        +coordonnerEquipes()
     }
 
     class SpecialisteBatiment {
-        +verifierNormes()
+        +String dspecialite
+        +verifierNormes(Projet projet)
+        +proposerSolutionsTechniques()
     }
 
     %% Acteurs sociaux
     class AssociationRiverains {
+
         +defendreInteretsLocaux()
+        +organiserReunionsPubliques()
     }
 
     class ComiteQuartier {
         +organiserEvenements()
+        +relayerInformation()
     }
 
     class Habitant {
         +String compositionFoyer
         +String logement
-        +donnerAvis()
+        +donnerAvis(Projet projet)
+        +participerConsultation()
     }
 
     class Usager {
+        +String usagePrincipal
         +utiliserEquipements()
         +exprimerBesoins()
     }
