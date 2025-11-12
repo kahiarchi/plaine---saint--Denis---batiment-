@@ -104,11 +104,5 @@ classDiagram
     ActeurSocial <|-- Habitant
     ActeurSocial <|-- Usager
 
-    %% Relations entre classes
-    Promoteur --> Projet : "développe"
-    ServiceUrbanisme --> Projet : "analyse et valide"
-    Mairie --> Projet : "autorise"
-    CollectiviteTerritoriale --> Projet : "planifie"
-    AssociationRiverains --> Projet : "donne avis"
-    Habitant --> Projet : "impacté par"
+   
 ```
