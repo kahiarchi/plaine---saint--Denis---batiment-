@@ -57,8 +57,8 @@ voc:Address a owl:Class ;
     dcterms:license "ISA Open Metadata Licence v1.1." ;
     vs:term_status "experimental" .
 
-voc:CoreConcepts a owl:Class ;
-    rdfs:label "CoreConcepts" ;
+voc:Person a owl:Class ;
+    rdfs:label "Person" ;
     dcterms:source "https://www.bbc.co.uk/ontologies/coreconcepts/#classes" ;
     dcterms:license "Creative Commons BY 4.0 (CC-BY 4.0)" ;
     vs:term_status "experimental" .
