@@ -64,7 +64,7 @@ voc:Person a owl:Class ;
     vs:term_status "experimental" .
 
 voc:Association a owl:Class ;
-    rdfs:label "Association" ;
+    rdfs:label "Association " ;
     dcterms:source "https://w3id.org/dsd#Association" ;
     dcterms:license "LGPL-2.1 license" ;
     vs:term_status "experimental" .
