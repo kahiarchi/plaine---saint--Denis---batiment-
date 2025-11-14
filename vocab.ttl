@@ -1,62 +1,62 @@
 
-@prefix voc: <https://projet.fr/onto/voc#> .
+@prefix bat: <https://projet.fr/onto/bat#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 
 
-<https://projet.fr/onto/voc#> a owl:Ontology ;
+<https://projet.fr/onto/bat#> a owl:Ontology ;
     dcterms:title "Vocabulaire Batiment" .
 
-voc:UrbanPlanning a owl:Class ;
+bat:UrbanPlanning a owl:Class ;
     rdfs:label "UrbanPlanning" ;
     dcterms:source "https://w3id.org/skgo/modsci#UrbanPlanning" ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
     vs:term_status "experimental" .
 
 
-voc:Citizen a owl:Class ;
+bat:Citizen a owl:Class ;
     rdfs:label "Citizen" ;
     dcterms:source "https://w3id.org/dpv#Citizen" ;
     vs:term_status "experimental" .
 
-voc:citizenship a owl:ObjectProperty, rdf:Property ;
+bat:citizenship a owl:ObjectProperty, rdf:Property ;
     rdfs:label "citizenship" ;
     dcterms:source "https://dbpedia.org/ontology/citizenship" ;
     dcterms:license "GFDL (GNU Free Documentation License)" ;
     vs:term_status "experimental" .
 
-voc:Organization a owl:Class, rdfs:Class ;
+bat:Organization a owl:Class, rdfs:Class ;
     rdfs:label "Organization" ;
     dcterms:source "https://schema.org/Organization" ;
     dcterms:license "CC-BY-SA 3.0" ;
     vs:term_status "experimental" .
 
-voc:geo a owl:Class, rdfs:Class ;
+bat:geo a owl:Class, rdfs:Class ;
     rdfs:label "geo" ;
     dcterms:source "https://schema.org/geo" ;
     dcterms:license "CC-BY-SA 3.0" ;
     vs:term_status "experimental" .
 
-voc:Building a owl:Class ;
+bat:Building a owl:Class ;
     rdfs:label "Building" ;
     dcterms:source "https://w3id.org/dco#Building" ;
     vs:term_status "experimental" .
 
-voc:Address a owl:Class ;
+bat:Address a owl:Class ;
     rdfs:label "Address" ;
     dcterms:source "http://www.w3.org/ns/locn#Address" ;
     dcterms:license "ISA Open Metadata Licence v1.1." ;
     vs:term_status "experimental" .
 
-voc:Person a owl:Class ;
+bat:Person a owl:Class ;
     rdfs:label "Person" ;
     dcterms:source "https://www.bbc.co.uk/ontologies/coreconcepts/#classes" ;
     dcterms:license "Creative Commons BY 4.0 (CC-BY 4.0)" ;
     vs:term_status "experimental" .
 
-voc:Association a owl:Class ;
+bat:Association a owl:Class ;
     rdfs:label "Association " ;
     dcterms:source "https://w3id.org/dsd#Association" ;
     dcterms:license "LGPL-2.1 license" ;
