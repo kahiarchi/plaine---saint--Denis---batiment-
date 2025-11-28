@@ -1,12 +1,16 @@
-Prefix ;Name ;Uri;Type ;Description;License;Useful_classes;Source
-modsci;Modern Science Ontology;https://w3id.org/skgo/modsci#UrbanPlanning;classe (owl:Class);Urban planning is a technical and political process concerned with the development and design of land use and the built environment, including air, water, and the infrastructure passing into and out of urban areas, such as transportation, communications, and distribution networks;https://creativecommons.org/licenses/by/4.0/;UrbanPlanning (classe elle-m�me), super-classes : InterdisciplinaryStudies ;
-dpv;Data Privacy Vocabulary;https://w3id.org/dpv#Citizen;classe (owl:Class);A data subject that is a citizen of a jurisdiction;;Citizen (classe elle?m�me), peut �tre utilis� pour mod�liser � habitants/citoyens � dans ton domaine li� aux acteurs du territoire;
-dbpedia-owl;DBpedia Ontology;https://dbpedia.org/ontology/citizenship;owl:ObjectProperty,  rdf:Property;�The citizenship(s) held by a person.�;GFDL (GNU Free Documentation License).;dbo:Person, dbo:Country  relation entre un individu et sa citoyennet� nationale;
-schema;Schema.org;https://schema.org/Organization;owl:Class / rdfs:Class;An organization such as a school, NGO, corporation, club, etc.;�CC-BY-SA 3.0�;schema:Organization;
-schema;Schema.org;https://schema.org/geo;owl:Class / rdfs:Class;The geographic coordinates of a place or event.;�CC-BY-SA 3.0�;;
-dco;domOS Common Ontology;https://w3id.org/dco#Building;classe (owl:Class);A building represents a structure that provides shelter for its occupants or contents and stands in one place. The building is also used to provide a basic element within the spatial structure hierarchy for the components of a building project (together with site, storey, and space). The basement floor of a building is floor number 0.;;dco:Building;
-locn;ISA Programme Location Core Vocabulary;http://www.w3.org/ns/locn#Address;owl:Class;"An ""address representation"" as conceptually defined by the�INSPIRE Address Representation data type. The�locn:addressId�property may be used to link this locn:Address to other representations.";ISA Open Metadata Licence v1.1.;Address;
-core;BBC Core Concepts Ontology;https://www.bbc.co.uk/ontologies/coreconcepts/#classes;owl:Class;"
-The class of people in the BBC. Subclasses of this can be all types of people such as politicians, athletes, historic figures, contributors in programmes, etc.";Creative Commons BY 4.0 (CC-BY 4.0);Person, Organisation, Place, Event;
-dsd;;"	https://w3id.org/dsd#Association";owl:Class;Association describes a relationship between two instances of dsd:Concept. There are three dsd:Association subclasses for aggregation, inheritance, and reference associations.;LGPL-2.1 license;AggregationAssociation, InheritanceAssociation,           ReferenceAssociation;
-;;;;;;;
+Nom du vocabulaire,Préfixe,URI,Thématique principale,Utilisation dans le projet
+DBpedia City,dbpedia-owl,http://dbpedia.org/ontology/city,Ville/Localité,"Localiser les villes, quartiers et territoires dans l’étude urbaine"
+LGDO City,lgdo,http://linkedgeodata.org/ontology/City,Ville/Localité,"Identifier le quartier et ses caractéristiques géographiques"
+DBpedia Urban Area,dbpedia-owl,http://dbpedia.org/ontology/urbanArea,Zone urbaine,"Représenter les zones d’aménagement, densité urbaine, projets urbains"
+OSR Urban Area,osr,http://contextus.net/ontology/ontomedia/core/space#Urban-Area,Zone urbaine,"Décrire les quartiers, zones d’intervention ou projets urbains spécifiques"
+GUFO Participation,gufo,http://purl.org/nemo/gufo#Participation,Participation citoyenne,"Modéliser la participation des habitants dans les projets urbains"
+FOAF Project,foaf,http://xmlns.com/foaf/0.1/Project,Projet collectif,"Relier les projets aux acteurs sociaux et associations impliquées"
+DBpedia Project,dbpedia-owl,http://dbpedia.org/ontology/Project,Projet urbain général,"Décrire les projets urbains (réaménagement, construction, réhabilitation)"
+DG Project,dg,https://w3id.org/dingo#Project,Projet + financement + acteurs,"Modéliser la gouvernance, les acteurs et ressources des projets urbains"
+FEA Citizen,fea,http://vocab.data.gov/def/fea#Citizen,Citoyen/Habitants,"Identifier les habitants impliqués et leur statut dans les projets"
+DPV Citizen,dpv,https://w3id.org/dpv#Citizen,Citoyen,"Décrire les citoyens participants et les non-citoyens (droits, rôle)"
+KM4C DigitalLocation,km4c,http://www.disit.org/km4city/schema#DigitalLocation,Outils numériques/Digital,"Modéliser l’usage des technologies numériques pour la participation et information"
+DPV DigitalSignatures,dpv,https://w3id.org/dpv#DigitalSignatures,Signatures numériques/Digital,"Décrire la sécurité ou validation des interactions numériques"
+HHT Territory,hht,https://w3id.org/HHT#Territory,Territoire,"Identifier le territoire du quartier de La Plaine Saint-Denis"
+TSN Territory,tsn,http://purl.org/net/tsn#Territory,Territoire,"Représenter le territoire en termes sociaux et géographiques"
+DBpedia Territory,dbpedia-owl,http://dbpedia.org/ontology/Territory,Territoire/Subdivision,"Relier les projets et citoyens au territoire du quartier"
