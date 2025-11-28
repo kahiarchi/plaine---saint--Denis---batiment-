@@ -1,63 +1,114 @@
-
-@prefix bat: <https://projet.fr/onto/bat#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bat: <http://example.org/bat/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-<https://projet.fr/onto/bat#> a owl:Ontology ;
-    dcterms:title "Vocabulaire Batiment" .
+# CLASSES PRINCIPALES
 
-bat:UrbanPlanning a owl:Class ;
-    rdfs:label "UrbanPlanning" ;
-    dcterms:source "https://w3id.org/skgo/modsci#UrbanPlanning" ;
-    dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
-    vs:term_status "experimental" .
+bat:City a owl:Class ;
+    rdfs:label "Ville / Localité"@fr ;
+    rdfs:comment "Ville ou quartier étudié (ex : La Plaine Saint-Denis)."@fr .
 
+bat:UrbanArea a owl:Class ;
+    rdfs:label "Zone urbaine"@fr ;
+    rdfs:comment "Zone d’aménagement, densité urbaine, secteur de projet."@fr .
+
+bat:Project a owl:Class ;
+    rdfs:label "Projet urbain"@fr ;
+    rdfs:comment "Projet urbain ou architectural (réaménagement, construction…)."@fr .
+
+bat:Participation a owl:Class ;
+    rdfs:label "Participation citoyenne"@fr ;
+    rdfs:comment "Processus de participation des habitants aux projets urbains."@fr .
 
 bat:Citizen a owl:Class ;
-    rdfs:label "Citizen" ;
-    dcterms:source "https://w3id.org/dpv#Citizen" ;
-    vs:term_status "experimental" .
+    rdfs:label "Citoyen / Habitant"@fr ;
+    rdfs:comment "Habitant ou usager impliqué dans le quartier."@fr .
 
-bat:citizenship a owl:ObjectProperty, rdf:Property ;
-    rdfs:label "citizenship" ;
-    dcterms:source "https://dbpedia.org/ontology/citizenship" ;
-    dcterms:license "GFDL (GNU Free Documentation License)" ;
-    vs:term_status "experimental" .
+bat:Territory a owl:Class ;
+    rdfs:label "Territoire"@fr ;
+    rdfs:comment "Territoire du quartier ou sous-secteur de la Plaine Saint-Denis."@fr .
 
-bat:Organization a owl:Class, rdfs:Class ;
-    rdfs:label "Organization" ;
-    dcterms:source "https://schema.org/Organization" ;
-    dcterms:license "CC-BY-SA 3.0" ;
-    vs:term_status "experimental" .
 
-bat:geo a owl:Class, rdfs:Class ;
-    rdfs:label "geo" ;
-    dcterms:source "https://schema.org/geo" ;
-    dcterms:license "CC-BY-SA 3.0" ;
-    vs:term_status "experimental" .
+# PROPRIÉTÉS D’OBJET (relations entre entités)
 
-bat:Building a owl:Class ;
-    rdfs:label "Building" ;
-    dcterms:source "https://w3id.org/dco#Building" ;
-    vs:term_status "experimental" .
+bat:locatedIn a owl:ObjectProperty ;
+    rdfs:label "est situé dans"@fr ;
+    rdfs:domain bat:City ;
+    rdfs:range bat:Territory ;
+    rdfs:comment "Une ville ou un quartier est situé dans un territoire."@fr .
 
-bat:Address a owl:Class ;
-    rdfs:label "Address" ;
-    dcterms:source "http://www.w3.org/ns/locn#Address" ;
-    dcterms:license "ISA Open Metadata Licence v1.1." ;
-    vs:term_status "experimental" .
+bat:containsArea a owl:ObjectProperty ;
+    rdfs:label "contient une zone"@fr ;
+    rdfs:domain bat:City ;
+    rdfs:range bat:UrbanArea ;
+    rdfs:comment "Liens entre la ville et ses zones urbaines."@fr .
 
-bat:Person a owl:Class ;
-    rdfs:label "Person" ;
-    dcterms:source "https://www.bbc.co.uk/ontologies/coreconcepts/#classes" ;
-    dcterms:license "Creative Commons BY 4.0 (CC-BY 4.0)" ;
-    vs:term_status "experimental" .
+bat:concernsArea a owl:ObjectProperty ;
+    rdfs:label "concerne la zone"@fr ;
+    rdfs:domain bat:Project ;
+    rdfs:range bat:UrbanArea ;
+    rdfs:comment "Un projet touche ou modifie une zone urbaine."@fr .
 
-bat:Association a owl:Class ;
-    rdfs:label "Association " ;
-    dcterms:source "https://w3id.org/dsd#Association" ;
-    dcterms:license "LGPL-2.1 license" ;
-    vs:term_status "experimental" .
+bat:involvesCitizen a owl:ObjectProperty ;
+    rdfs:label "implique un citoyen"@fr ;
+    rdfs:domain bat:Participation ;
+    rdfs:range bat:Citizen ;
+    rdfs:comment "Un processus de participation implique un habitant."@fr .
+
+bat:relatedToProject a owl:ObjectProperty ;
+    rdfs:label "lié au projet"@fr ;
+    rdfs:domain bat:Participation ;
+    rdfs:range bat:Project ;
+    rdfs:comment "Participation en lien avec un projet urbain."@fr .
+
+bat:participatesIn a owl:ObjectProperty ;
+    rdfs:label "participe à"@fr ;
+    rdfs:domain bat:Citizen ;
+    rdfs:range bat:Project ;
+    rdfs:comment "Un citoyen participe à un projet."@fr .
+
+bat:usesDigitalTool a owl:ObjectProperty ;
+    rdfs:label "utilise un outil numérique"@fr ;
+    rdfs:domain bat:Participation ;
+    rdfs:range bat:DigitalTool ;
+    rdfs:comment "Lien entre participation et outils numériques."@fr .
+
+bat:DigitalTool a owl:Class ;
+    rdfs:label "Outil numérique"@fr ;
+    rdfs:comment "Outil numérique utilisé pour la participation citoyenne (plateforme, carte interactive…)."@fr .
+
+
+# PROPRIÉTÉS DE DONNÉES (descriptions textuelles ou numériques)
+
+bat:projectName a owl:DatatypeProperty ;
+    rdfs:label "nom du projet"@fr ;
+    rdfs:domain bat:Project ;
+    rdfs:range xsd:string .
+
+bat:projectYear a owl:DatatypeProperty ;
+    rdfs:label "année du projet"@fr ;
+    rdfs:domain bat:Project ;
+    rdfs:range xsd:gYear .
+
+bat:citizenName a owl:DatatypeProperty ;
+    rdfs:label "nom du citoyen"@fr ;
+    rdfs:domain bat:Citizen ;
+    rdfs:range xsd:string .
+
+bat:participationType a owl:DatatypeProperty ;
+    rdfs:label "type de participation"@fr ;
+    rdfs:domain bat:Participation ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Ex : atelier de quartier, concertation numérique, enquête publique…"@fr .
+
+bat:toolName a owl:DatatypeProperty ;
+    rdfs:label "nom de l’outil numérique"@fr ;
+    rdfs:domain bat:DigitalTool ;
+    rdfs:range xsd:string .
+
+bat:description a owl:DatatypeProperty ;
+    rdfs:label "description"@fr ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Description générale."@fr .
