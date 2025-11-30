@@ -113,6 +113,7 @@ bat:description a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     rdfs:comment "Description générale."@fr .
 
+
 bat:participantsNumber a owl:DatatypeProperty ;
     rdfs:label "nombre de participants"@fr ;
     rdfs:domain bat:Participation ;
