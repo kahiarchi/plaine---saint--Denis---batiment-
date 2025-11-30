@@ -30,8 +30,12 @@ bat:Territory a owl:Class ;
     rdfs:label "Territoire"@fr ;
     rdfs:comment "Territoire du quartier ou sous-secteur de la Plaine Saint-Denis."@fr .
 
+bat:DigitalTool a owl:Class ;
+    rdfs:label "Outil numérique"@fr ;
+    rdfs:comment "Outil numérique utilisé pour la participation citoyenne (plateforme, carte interactive…)."@fr .
 
-# PROPRIÉTÉS D’OBJET (relations entre entités)
+
+# PROPRIÉTÉS D’OBJET
 
 bat:locatedIn a owl:ObjectProperty ;
     rdfs:label "est situé dans"@fr ;
@@ -75,12 +79,8 @@ bat:usesDigitalTool a owl:ObjectProperty ;
     rdfs:range bat:DigitalTool ;
     rdfs:comment "Lien entre participation et outils numériques."@fr .
 
-bat:DigitalTool a owl:Class ;
-    rdfs:label "Outil numérique"@fr ;
-    rdfs:comment "Outil numérique utilisé pour la participation citoyenne (plateforme, carte interactive…)."@fr .
 
-
-# PROPRIÉTÉS DE DONNÉES (descriptions textuelles ou numériques)
+# PROPRIÉTÉS DE DONNÉES
 
 bat:projectName a owl:DatatypeProperty ;
     rdfs:label "nom du projet"@fr ;
@@ -112,3 +112,9 @@ bat:description a owl:DatatypeProperty ;
     rdfs:label "description"@fr ;
     rdfs:range xsd:string ;
     rdfs:comment "Description générale."@fr .
+
+bat:participantsNumber a owl:DatatypeProperty ;
+    rdfs:label "nombre de participants"@fr ;
+    rdfs:domain bat:Participation ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Nombre total de participants associés à la participation citoyenne."@fr .
