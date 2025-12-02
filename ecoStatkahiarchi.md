@@ -118,41 +118,46 @@ classDiagram
     Personne <|-- Citoyen
     Citoyen <|-- CitoyenActif
     Citoyen <|-- CitoyenProfessionnel
-
-    CitoyenProfessionnel <|-- InstitutionPublique
-    CitoyenProfessionnel <|-- ActeurPrive
+    CitoyenProfessionnel <|-- CitoyenPublic
+    CitoyenProfessionnel <|-- CitoyenPrive
 
   class Personne {
      +int age
      +String genre
-     +String nom ()
-    }
+     +String nom
+  }
+
   class Citoyen {
      +String statut 
      +String implication
      +participerProjet()
-    }
-  class CitoyenActif{
-          +String association
-          +exprimerAvis()
-          }
-    class CitoyenProfessionnel{
-      +String fonction
-      +String domaine
-      +AgireEnFonction()
-     }
-   class InstitutionPublique{
-      +String nom
-      +String service
-      +gererProjet()
-     }
-   class ActeurPrive{
-      +String entreprise
-      +String secteur
-      +realiserProjet()
-     }
+  }
+
+  class CitoyenActif {
+     +String association
+     +exprimerAvis()
+  }
+
+  class CitoyenProfessionnel {
+     +String fonction
+     +String domaine
+     +agirEnFonction()
+  }
+
+  class CitoyenPublic {
+     +String institution
+     +String service
+     +gererProjet()
+  }
+
+  class CitoyenPrive {
+     +String entreprise
+     +String secteur
+     +realiserProjet()
+  }
   
 ```
+
 ## 5_ REPRESENTATIONS ET ANALYSE DES DONNEES 
 
 Cette étude analyse la participation des citoyens, des acteurs publics et privés dans différents projets urbains à La Plaine Saint-Denis. Les visualisations suivantes permettent de comprendre la répartition des acteurs, le type de participation et la localisation des projets.
