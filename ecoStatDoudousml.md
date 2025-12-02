@@ -81,42 +81,7 @@ Les données brutes issues des sources précédentes ont été synthétisées da
 
 ## 3. Diagramme de classe de mon projet 
 
-```mermaid
-classDiagram
-    Acteur <|-- Citoyen
-    Acteur <|-- Association
-    Acteur <|-- Institution
-    Institution <|-- InstitutionPublique
-    Institution <|-- InstitutionPrivee
-    Acteur : +String Name
-    Acteur : +String adresse
-    Acteur: +communiquer()
-    Acteur: +collaborer()
-    class Citoyen{
-      +date dateDenaissance
-      + participerConsultation()
-      + signalerProbleme()
-    }
-class Institution {
-        +array role
-        +regulerProjet()
-        +piloterProjet()
-        +delivrerAutorisationUrbanisme()
-    }
-    class Association{
 
-    +array membres 
-    + alerterprobleme()
-    + organiserActions()
-    }
-     class InstitutionPublique {
-      +String nomMinistere
-    }
-
-    class InstitutionPrivee {
-      +String secteurActivite 
-    }
-```
 
 Pour explorer ces données, nous utilisons les bibliothèques Python suivantes :
 
