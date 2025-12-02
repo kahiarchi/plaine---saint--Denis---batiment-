@@ -172,8 +172,7 @@ Cette étude analyse la participation de la population, des acteurs publics et p
 
 ** OBSERVATIONS :**
 ###  Nombre de citoyens par statut
-  - La majorité des citoyens est constituée par des habitants.
-  - Les professionnels et acteurs associatifs sont également présents, mais en moins grande proportion. 
+  -  Les habitants sont minoritaires parmi les citoyens par rapport aux professionnels et aux acteurs associatifs. 
 
 ###  Répartition des acteurs (citoyens, publics, privés)
   - Les citoyens constituent la plus grande part des acteurs.
