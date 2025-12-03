@@ -172,6 +172,15 @@ Afin d'analyser la participation citoyenne dans les projets urbains au quartier 
   
 <img width="600" height="371" alt="Nombre de projets par statut (Etat d&#39;avancement)" src="https://github.com/user-attachments/assets/60f6aba5-68b8-42e5-be1c-446d496eac51" />
 
+Le diagramme camembert montre la répartition des projets selon leur état d’avancement. On observe que :
+
+60 % des projets sont encore planifiés, ce qui traduit une phase active de planification et de conception sur le territoire.
+
+30 % des projets sont terminés, indiquant que certaines initiatives urbaines ont déjà été concrétisées et sont opérationnelles.
+
+10 % des projets sont en construction, représentant le démarrage effectif de chantiers sur le terrain.
+
+Cette répartition met en évidence une forte dynamique de développement urbain, avec une majorité de projets en préparation, tandis qu’une partie significative est déjà réalisée, contribuant à la transformation progressive du quartier.
 
 
  - **Histogramme**  présente la répartition du nombre d’acteurs selon leur type.
