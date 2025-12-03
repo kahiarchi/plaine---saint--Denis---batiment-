@@ -170,6 +170,10 @@ Afin d'analyser la participation citoyenne dans les projets urbains au quartier 
 
 - **Camembert** illustre la proportion de projets selon leur statut. Chaque part montre la part de projets « En cours », « Achevés » ou « Planifiés ».
   
+<img width="600" height="371" alt="Nombre de projets par statut (Etat d&#39;avancement)" src="https://github.com/user-attachments/assets/60f6aba5-68b8-42e5-be1c-446d496eac51" />
+
+
+
  - **Histogramme**  présente la répartition du nombre d’acteurs selon leur type.
 Chaque barre représente une catégorie d’acteurs : résidents, promoteurs ou institutions.
 Ce graphique permet de visualiser rapidement quels types d’acteurs sont les plus représentés dans le projet et de comprendre la diversité des participants impliqués dans le processus urbain.
@@ -177,17 +181,15 @@ Ce graphique permet de visualiser rapidement quels types d’acteurs sont les pl
  <img width="600" height="371" alt="NombreActeur_ par_ type" src="https://github.com/user-attachments/assets/e6648b50-71db-4e42-9720-46ca7aadbdbb" />
 
 
- - **Histogramme**  présente la répartition du nombre d’acteurs selon leur type.
-Chaque barre représente une catégorie d’acteurs : résidents, promoteurs ou institutions.
-Ce graphique permet de visualiser rapidement quels types d’acteurs sont les plus représentés dans le projet et de comprendre la diversité des participants impliqués dans le processus urbain.
-- <img width="600" height="371" alt="NombreActeur_ par_ type" src="https://github.com/user-attachments/assets/e6648b50-71db-4e42-9720-46ca7aadbdbb" />
-
-
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
-- <img width="590" height="702" alt="localisation projets" src="https://github.com/user-attachments/assets/755efde1-cc9d-4802-8437-a03d84c4d072" />
+  
+  <img width="590" height="702" alt="localisation projets" src="https://github.com/user-attachments/assets/755efde1-cc9d-4802-8437-a03d84c4d072" />
+
 
 - **Graphique en barres empilées** montre les collaborations des promoteurs avec les institutions. Les couleurs représentent les différents types de collaboration.
--<img width="600" height="371" alt="Collaboration Entre Les Acteurs" src="https://github.com/user-attachments/assets/4f073bf8-ea89-4838-88f8-6c43d6ba3d4a" />
+  
+<img width="600" height="371" alt="Collaboration Entre Les Acteurs" src="https://github.com/user-attachments/assets/4f073bf8-ea89-4838-88f8-6c43d6ba3d4a" />
+
 
 ** OBSERVATIONS :**
 
@@ -195,11 +197,14 @@ Les données montrent une répartition équilibrée entre les projets planifiés
 Les collaborations entre promoteurs et institutions mettent en évidence une bonne coordination entre les acteurs techniques et administratifs.
 Les échanges entre résidents et services illustrent une volonté d’intégrer la population au processus de suivi et d’évaluation des projets.
 
+
 ## 6_ INTERACTIONS AVEC L'ENVIRONNEMENT 
+
 La localisation des projets à la Plaine Saint-Denis révèle une forte concentration dans un même secteur urbain.
 Cette proximité facilite la gestion des chantiers, la mutualisation des équipements et la cohérence du développement local.
 Les projets participatifs contribuent ainsi à renforcer les liens entre les habitants et leur cadre de vie, tout en soutenant un urbanisme plus collaboratif.
 
 ## 7_ Conclusion
+
 L’ensemble des données met en valeur la collaboration entre les différents acteurs et l’importance de leur rôle dans le développement urbain.
 Cette dynamique participative favorise un environnement mieux organisé, durable et adapté aux besoins des résidents.
