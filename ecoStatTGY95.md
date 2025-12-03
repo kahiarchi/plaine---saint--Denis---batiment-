@@ -159,9 +159,7 @@ classDiagram
 
 ```
 
-```
 ## 5_ REPRESENTATIONS ET ANALYSE DES DONNEES 
-
 
 L’analyse des données a pour objectif de mieux comprendre la répartition et les interactions entre les différents acteurs du projet urbain.
 Les informations issues des tables permettent de visualiser les relations entre résidents, promoteurs et institutions, ainsi que la progression des projets dans la zone étudiée.
