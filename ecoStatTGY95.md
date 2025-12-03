@@ -38,7 +38,8 @@ Table Acteur
 Table Résident :
 
 
-<img width="589" height="175" alt="image" src="https://github.com/user-attachments/assets/b214d190-1686-40e1-b785-ffbfdc1c447b" />
+<img width="619" height="320" alt="image" src="https://github.com/user-attachments/assets/d33ca649-b154-4754-9267-7ec02c71da33" />
+
 
 
 
@@ -88,19 +89,7 @@ Table ServiceBatiment :
 Table Projet : 
 
 
-<img width="498" height="262" alt="image" src="https://github.com/user-attachments/assets/9ac883e2-675d-442e-8b0a-89f14a3c5faa" />
-
-
-
-
-
-
-
-
-
-
-
-
+<img width="624" height="378" alt="image" src="https://github.com/user-attachments/assets/5a642cb6-efa3-42ca-bf03-b9a86049de09" />
 
 
 
