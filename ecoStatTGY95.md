@@ -172,7 +172,8 @@ Afin d'analyser la participation citoyenne dans les projets urbains au quartier 
   
 <img width="600" height="371" alt="Nombre de projets par statut (Etat d&#39;avancement)" src="https://github.com/user-attachments/assets/60f6aba5-68b8-42e5-be1c-446d496eac51" />
 
-Le diagramme camembert montre la répartition des projets selon leur état d’avancement. On observe que :
+
+Le diagramme  montre la répartition des projets selon leur état d’avancement. On observe que :
 
 60 % des projets sont encore planifiés, ce qui traduit une phase active de planification et de conception sur le territoire.
 
