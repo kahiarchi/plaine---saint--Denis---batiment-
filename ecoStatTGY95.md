@@ -31,58 +31,62 @@ Données INSEE sur la population et le logement : https://www.insee.fr/fr/statis
 Table Acteur
 
 
-<img width="460" height="378" alt="image" src="https://github.com/user-attachments/assets/8728304e-151f-40d0-806d-3d9aefce0fb4" />
+<img width="352" height="262" alt="image" src="https://github.com/user-attachments/assets/ed2c4600-d867-4525-9402-24550a46aaa6" />
 
 
 Table Résident :
 
 
-<img width="552" height="233" alt="image" src="https://github.com/user-attachments/assets/0bddcd69-4998-4442-b94f-7229478fae35" />
+<img width="589" height="175" alt="image" src="https://github.com/user-attachments/assets/b214d190-1686-40e1-b785-ffbfdc1c447b" />
+
 
 
 Table Promoteur :
 
 
-<img width="557" height="262" alt="image" src="https://github.com/user-attachments/assets/9e383cf2-f4f1-422d-a647-4f55c36d2e84" />
+<img width="385" height="175" alt="image" src="https://github.com/user-attachments/assets/61c52932-0ea7-43b6-a166-3ac8068f3950" />
+
 
 
 Table GroupeConstruction :
 
 
-<img width="320" height="117" alt="image" src="https://github.com/user-attachments/assets/faff03dc-422b-498f-93c0-86ea029c0ac8" />
+
+<img width="276" height="88" alt="image" src="https://github.com/user-attachments/assets/995af157-fafb-4762-9cb4-f3d3418961c0" />
 
 
 
 Table GroupeImmobilier :
 
 
-<img width="327" height="88" alt="image" src="https://github.com/user-attachments/assets/3eb5a72a-0858-4804-9e0f-215cb5080f35" />
+<img width="327" height="88" alt="image" src="https://github.com/user-attachments/assets/83ee2ce6-b320-4753-8df3-cbec14a4be72" />
+
 
 
 Table Institution :
 
 
-<img width="460" height="175" alt="image" src="https://github.com/user-attachments/assets/0093ea55-524b-4b26-ae14-0f507be9f7a3" />
+<img width="404" height="204" alt="image" src="https://github.com/user-attachments/assets/904801fa-7474-4ae1-bd53-10c4dd28ec46" />
+
 
 
 Table ServiceUrbanisme : 
 
 
-<img width="281" height="88" alt="image" src="https://github.com/user-attachments/assets/7775855a-c823-4d5f-b08d-983382283758" />
+<img width="281" height="88" alt="image" src="https://github.com/user-attachments/assets/49373ddc-d900-4950-bf8e-7a12ee0b7472" />
+
 
 
 Table ServiceBatiment : 
 
 
-<img width="281" height="88" alt="image" src="https://github.com/user-attachments/assets/7775855a-c823-4d5f-b08d-983382283758" />
+<img width="290" height="88" alt="image" src="https://github.com/user-attachments/assets/688bd31b-cbf1-4253-8641-9b2b24d46e5d" />
+
 
 
 Table Projet : 
 
-id_projet	nom	statut	localisation
-1	Résidence Lumière	En construction	Plaine Saint-Denis
-2	Centre Commercial Plaine	Terminé	Plaine Saint-Denis
-3	Parc Urbain	Planifié	Plaine Saint-Denis
+
 <img width="498" height="262" alt="image" src="https://github.com/user-attachments/assets/9ac883e2-675d-442e-8b0a-89f14a3c5faa" />
 
 
