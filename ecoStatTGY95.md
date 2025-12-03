@@ -166,14 +166,22 @@ Les informations issues des tables permettent de visualiser les relations entre 
 Les représentations graphiques et cartographiques facilitent cette lecture en mettant en évidence les tendances, les types de collaboration et la localisation des projets.
 
 Afin d'analyser la participation citoyenne dans les projets urbains au quartier de la plaine Saint Denis , nous avons envisagé les représentations suivantes  :
-- **Histogramme**  présente la répartition du nombre d’acteurs selon leur type.
+
+
+- **Camembert** illustre la proportion de projets selon leur statut. Chaque part montre la part de projets « En cours », « Achevés » ou « Planifiés ».
+  
+ - **Histogramme**  présente la répartition du nombre d’acteurs selon leur type.
+Chaque barre représente une catégorie d’acteurs : résidents, promoteurs ou institutions.
+Ce graphique permet de visualiser rapidement quels types d’acteurs sont les plus représentés dans le projet et de comprendre la diversité des participants impliqués dans le processus urbain.
+
+ <img width="600" height="371" alt="NombreActeur_ par_ type" src="https://github.com/user-attachments/assets/e6648b50-71db-4e42-9720-46ca7aadbdbb" />
+
+
+ - **Histogramme**  présente la répartition du nombre d’acteurs selon leur type.
 Chaque barre représente une catégorie d’acteurs : résidents, promoteurs ou institutions.
 Ce graphique permet de visualiser rapidement quels types d’acteurs sont les plus représentés dans le projet et de comprendre la diversité des participants impliqués dans le processus urbain.
 - <img width="600" height="371" alt="NombreActeur_ par_ type" src="https://github.com/user-attachments/assets/e6648b50-71db-4e42-9720-46ca7aadbdbb" />
 
-- **Camembert** illustre la proportion de projets selon leur statut. Chaque part montre la part de projets « En cours », « Achevés » ou « Planifiés ».
-  
- <img width="600" height="371" alt="Nombre de projet par statut( Etat d&#39;avancement)" src="https://github.com/user-attachments/assets/c0355f75-353e-4cff-83c2-cb45d3560e20" />
 
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
 - <img width="590" height="702" alt="localisation projets" src="https://github.com/user-attachments/assets/755efde1-cc9d-4802-8437-a03d84c4d072" />
