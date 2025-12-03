@@ -77,6 +77,16 @@ Table ServiceBatiment :
 <img width="281" height="88" alt="image" src="https://github.com/user-attachments/assets/7775855a-c823-4d5f-b08d-983382283758" />
 
 
+Table Projet : 
+
+id_projet	nom	statut	localisation
+1	Résidence Lumière	En construction	Plaine Saint-Denis
+2	Centre Commercial Plaine	Terminé	Plaine Saint-Denis
+3	Parc Urbain	Planifié	Plaine Saint-Denis
+<img width="498" height="262" alt="image" src="https://github.com/user-attachments/assets/9ac883e2-675d-442e-8b0a-89f14a3c5faa" />
+
+
+
 
 
 
