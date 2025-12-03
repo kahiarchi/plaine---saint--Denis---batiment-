@@ -172,8 +172,8 @@ Ce graphique permet de visualiser rapidement quels types d’acteurs sont les pl
 - <img width="600" height="371" alt="NombreActeur_ par_ type" src="https://github.com/user-attachments/assets/e6648b50-71db-4e42-9720-46ca7aadbdbb" />
 
 - **Camembert** illustre la proportion de projets selon leur statut. Chaque part montre la part de projets « En cours », « Achevés » ou « Planifiés ».
-- (<img width="600" height="371" alt="Nombre de projets par statut _ état d&#39;avancement_" src="https://github.com/user-attachments/assets/dfcf1b30-1fb9-4584-8557-df5e6558c1e7" />
-)
+- <img width="600" height="371" alt="Nombre de projet par statut( Etat d&#39;avancement)" src="https://github.com/user-attachments/assets/c0355f75-353e-4cff-83c2-cb45d3560e20" />
+
 - **Carte interactive** pour localiser les projets participatifs dans le quartier ou la ville .
 - <img width="590" height="702" alt="localisation projets" src="https://github.com/user-attachments/assets/755efde1-cc9d-4802-8437-a03d84c4d072" />
 
